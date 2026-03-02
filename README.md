@@ -6,14 +6,6 @@ This project estimates the true causal impact of retail promotions using
 uplift modeling — identifying which customers buy *because* of a promotion 
 vs those who would have bought anyway.
 
-## Team
-- Adith Kadam Ramesh (Project Lead)
-- Sudesna Das Rochi
-- Sahitya Kotla
-- Dhrumil Panchal
-- Hrushik Mehta
-- Aneesha Prasad
-
 ## Dataset
 Dunnhumby Complete Journey Dataset
 
