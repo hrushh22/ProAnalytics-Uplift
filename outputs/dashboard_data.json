@@ -1,0 +1,5498 @@
+{
+  "meta": {
+    "project": "Promotion Uplift Modeling Using Causal ML",
+    "team": "ProAnalytics",
+    "dataset": "Dunnhumby Complete Journey (Simulated)",
+    "n_customers": 5000,
+    "models_used": [
+      "T-Learner (XGBoost)",
+      "X-Learner (XGBoost)",
+      "Propensity Score (LR)"
+    ]
+  },
+  "kpis": {
+    "total_customers": 5000,
+    "persuadable_count": 2366,
+    "persuadable_pct": 47.3,
+    "avg_uplift_score": 0.1449,
+    "treatment_purchase_rate": 52.93,
+    "control_purchase_rate": 37.37,
+    "lift": 15.57,
+    "qini_coefficient": 107.0985,
+    "optimal_targeting_pct": 10,
+    "max_net_roi": -36.54,
+    "total_revenue": 84433.0
+  },
+  "segments": {
+    "Persuadable": 2366,
+    "Moderate Responder": 1923,
+    "Sure Thing / Neutral": 585,
+    "Do-Not-Disturb": 126
+  },
+  "uplift_histogram": [
+    {
+      "bin": -0.303,
+      "count": 1
+    },
+    {
+      "bin": -0.277,
+      "count": 0
+    },
+    {
+      "bin": -0.251,
+      "count": 0
+    },
+    {
+      "bin": -0.225,
+      "count": 4
+    },
+    {
+      "bin": -0.199,
+      "count": 6
+    },
+    {
+      "bin": -0.173,
+      "count": 5
+    },
+    {
+      "bin": -0.147,
+      "count": 14
+    },
+    {
+      "bin": -0.121,
+      "count": 26
+    },
+    {
+      "bin": -0.095,
+      "count": 29
+    },
+    {
+      "bin": -0.069,
+      "count": 58
+    },
+    {
+      "bin": -0.043,
+      "count": 107
+    },
+    {
+      "bin": -0.018,
+      "count": 159
+    },
+    {
+      "bin": 0.008,
+      "count": 158
+    },
+    {
+      "bin": 0.034,
+      "count": 248
+    },
+    {
+      "bin": 0.06,
+      "count": 370
+    },
+    {
+      "bin": 0.086,
+      "count": 504
+    },
+    {
+      "bin": 0.112,
+      "count": 644
+    },
+    {
+      "bin": 0.138,
+      "count": 630
+    },
+    {
+      "bin": 0.164,
+      "count": 533
+    },
+    {
+      "bin": 0.19,
+      "count": 441
+    },
+    {
+      "bin": 0.216,
+      "count": 352
+    },
+    {
+      "bin": 0.242,
+      "count": 253
+    },
+    {
+      "bin": 0.267,
+      "count": 165
+    },
+    {
+      "bin": 0.293,
+      "count": 109
+    },
+    {
+      "bin": 0.319,
+      "count": 80
+    },
+    {
+      "bin": 0.345,
+      "count": 51
+    },
+    {
+      "bin": 0.371,
+      "count": 21
+    },
+    {
+      "bin": 0.397,
+      "count": 19
+    },
+    {
+      "bin": 0.423,
+      "count": 8
+    },
+    {
+      "bin": 0.449,
+      "count": 5
+    }
+  ],
+  "uplift_curve": [
+    {
+      "percentile": 5.0,
+      "model": 3.403
+    },
+    {
+      "percentile": 10.0,
+      "model": 6.428
+    },
+    {
+      "percentile": 15.0,
+      "model": 8.803
+    },
+    {
+      "percentile": 20.0,
+      "model": 10.554
+    },
+    {
+      "percentile": 25.0,
+      "model": 12.79
+    },
+    {
+      "percentile": 30.0,
+      "model": 14.617
+    },
+    {
+      "percentile": 35.0,
+      "model": 16.635
+    },
+    {
+      "percentile": 40.0,
+      "model": 18.116
+    },
+    {
+      "percentile": 45.0,
+      "model": 19.443
+    },
+    {
+      "percentile": 50.0,
+      "model": 20.302
+    },
+    {
+      "percentile": 55.0,
+      "model": 21.27
+    },
+    {
+      "percentile": 60.0,
+      "model": 21.343
+    },
+    {
+      "percentile": 65.0,
+      "model": 21.295
+    },
+    {
+      "percentile": 70.0,
+      "model": 21.474
+    },
+    {
+      "percentile": 75.0,
+      "model": 21.377
+    },
+    {
+      "percentile": 80.0,
+      "model": 20.73
+    },
+    {
+      "percentile": 85.0,
+      "model": 20.538
+    },
+    {
+      "percentile": 90.0,
+      "model": 19.553
+    },
+    {
+      "percentile": 95.0,
+      "model": 17.984
+    },
+    {
+      "percentile": 100.0,
+      "model": 15.566
+    }
+  ],
+  "qini_curve": [
+    {
+      "percentile": 5.0,
+      "model": 38.36,
+      "random": 0
+    },
+    {
+      "percentile": 10.0,
+      "model": 70.6,
+      "random": 0
+    },
+    {
+      "percentile": 15.0,
+      "model": 88.67,
+      "random": 0
+    },
+    {
+      "percentile": 20.0,
+      "model": 107.38,
+      "random": 0
+    },
+    {
+      "percentile": 25.0,
+      "model": 123.39,
+      "random": 0
+    },
+    {
+      "percentile": 30.0,
+      "model": 131.21,
+      "random": 0
+    },
+    {
+      "percentile": 35.0,
+      "model": 144.69,
+      "random": 0
+    },
+    {
+      "percentile": 40.0,
+      "model": 153.76,
+      "random": 0
+    },
+    {
+      "percentile": 45.0,
+      "model": 155.76,
+      "random": 0
+    },
+    {
+      "percentile": 50.0,
+      "model": 156.12,
+      "random": 0
+    },
+    {
+      "percentile": 55.0,
+      "model": 156.83,
+      "random": 0
+    },
+    {
+      "percentile": 60.0,
+      "model": 148.19,
+      "random": 0
+    },
+    {
+      "percentile": 65.0,
+      "model": 139.9,
+      "random": 0
+    },
+    {
+      "percentile": 70.0,
+      "model": 132.73,
+      "random": 0
+    },
+    {
+      "percentile": 75.0,
+      "model": 120.79,
+      "random": 0
+    },
+    {
+      "percentile": 80.0,
+      "model": 101.86,
+      "random": 0
+    },
+    {
+      "percentile": 85.0,
+      "model": 88.69,
+      "random": 0
+    },
+    {
+      "percentile": 90.0,
+      "model": 66.11,
+      "random": 0
+    },
+    {
+      "percentile": 95.0,
+      "model": 36.11,
+      "random": 0
+    },
+    {
+      "percentile": 100.0,
+      "model": 0.0,
+      "random": 0
+    }
+  ],
+  "feature_importance": [
+    {
+      "feature": "Store Visits",
+      "importance": 0.0637
+    },
+    {
+      "feature": "Value Score",
+      "importance": 0.0634
+    },
+    {
+      "feature": "Engagement Score",
+      "importance": 0.0627
+    },
+    {
+      "feature": "Coupon Redemption Rate",
+      "importance": 0.0612
+    },
+    {
+      "feature": "Rfm Score",
+      "importance": 0.0609
+    },
+    {
+      "feature": "Avg Basket Value",
+      "importance": 0.0608
+    },
+    {
+      "feature": "Recency Days",
+      "importance": 0.0606
+    },
+    {
+      "feature": "Promo Sensitivity Score",
+      "importance": 0.0599
+    },
+    {
+      "feature": "Weekend Shopper",
+      "importance": 0.0599
+    },
+    {
+      "feature": "Discount Sensitivity",
+      "importance": 0.0593
+    },
+    {
+      "feature": "Purchase Frequency",
+      "importance": 0.0582
+    },
+    {
+      "feature": "Num Categories",
+      "importance": 0.0572
+    }
+  ],
+  "baseline_models": {
+    "Logistic Regression": {
+      "auc": 0.5727
+    },
+    "Random Forest": {
+      "auc": 0.5143
+    },
+    "XGBoost": {
+      "auc": 0.5032
+    },
+    "Gradient Boosting": {
+      "auc": 0.5442
+    }
+  },
+  "treatment_control": {
+    "treatment_purchase_rate": 52.93,
+    "control_purchase_rate": 37.37,
+    "avg_revenue_treated": 23.17,
+    "avg_revenue_control": 14.57,
+    "n_treated": 1347,
+    "n_control": 3653
+  },
+  "roi_simulation": [
+    {
+      "pct_targeted": 5,
+      "n_customers": 250,
+      "incremental_revenue": 1201.55,
+      "discount_cost": 1250.0,
+      "net_roi": -48.45,
+      "roi_pct": -3.9
+    },
+    {
+      "pct_targeted": 10,
+      "n_customers": 500,
+      "incremental_revenue": 2463.46,
+      "discount_cost": 2500.0,
+      "net_roi": -36.54,
+      "roi_pct": -1.5
+    },
+    {
+      "pct_targeted": 15,
+      "n_customers": 750,
+      "incremental_revenue": 3671.38,
+      "discount_cost": 3750.0,
+      "net_roi": -78.62,
+      "roi_pct": -2.1
+    },
+    {
+      "pct_targeted": 20,
+      "n_customers": 1000,
+      "incremental_revenue": 4889.91,
+      "discount_cost": 5000.0,
+      "net_roi": -110.09,
+      "roi_pct": -2.2
+    },
+    {
+      "pct_targeted": 25,
+      "n_customers": 1250,
+      "incremental_revenue": 5892.25,
+      "discount_cost": 6250.0,
+      "net_roi": -357.75,
+      "roi_pct": -5.7
+    },
+    {
+      "pct_targeted": 30,
+      "n_customers": 1500,
+      "incremental_revenue": 6936.07,
+      "discount_cost": 7500.0,
+      "net_roi": -563.93,
+      "roi_pct": -7.5
+    },
+    {
+      "pct_targeted": 35,
+      "n_customers": 1750,
+      "incremental_revenue": 8100.09,
+      "discount_cost": 8750.0,
+      "net_roi": -649.91,
+      "roi_pct": -7.4
+    },
+    {
+      "pct_targeted": 40,
+      "n_customers": 2000,
+      "incremental_revenue": 9241.16,
+      "discount_cost": 10000.0,
+      "net_roi": -758.84,
+      "roi_pct": -7.6
+    },
+    {
+      "pct_targeted": 45,
+      "n_customers": 2250,
+      "incremental_revenue": 10281.35,
+      "discount_cost": 11250.0,
+      "net_roi": -968.65,
+      "roi_pct": -8.6
+    },
+    {
+      "pct_targeted": 50,
+      "n_customers": 2500,
+      "incremental_revenue": 10689.35,
+      "discount_cost": 12500.0,
+      "net_roi": -1810.65,
+      "roi_pct": -14.5
+    },
+    {
+      "pct_targeted": 55,
+      "n_customers": 2750,
+      "incremental_revenue": 10689.35,
+      "discount_cost": 13750.0,
+      "net_roi": -3060.65,
+      "roi_pct": -22.3
+    },
+    {
+      "pct_targeted": 60,
+      "n_customers": 3000,
+      "incremental_revenue": 10689.35,
+      "discount_cost": 15000.0,
+      "net_roi": -4310.65,
+      "roi_pct": -28.7
+    },
+    {
+      "pct_targeted": 65,
+      "n_customers": 3250,
+      "incremental_revenue": 10689.35,
+      "discount_cost": 16250.0,
+      "net_roi": -5560.65,
+      "roi_pct": -34.2
+    },
+    {
+      "pct_targeted": 70,
+      "n_customers": 3500,
+      "incremental_revenue": 10689.35,
+      "discount_cost": 17500.0,
+      "net_roi": -6810.65,
+      "roi_pct": -38.9
+    },
+    {
+      "pct_targeted": 75,
+      "n_customers": 3750,
+      "incremental_revenue": 10689.35,
+      "discount_cost": 18750.0,
+      "net_roi": -8060.65,
+      "roi_pct": -43.0
+    },
+    {
+      "pct_targeted": 80,
+      "n_customers": 4000,
+      "incremental_revenue": 10689.35,
+      "discount_cost": 20000.0,
+      "net_roi": -9310.65,
+      "roi_pct": -46.6
+    },
+    {
+      "pct_targeted": 85,
+      "n_customers": 4250,
+      "incremental_revenue": 10689.35,
+      "discount_cost": 21250.0,
+      "net_roi": -10560.65,
+      "roi_pct": -49.7
+    },
+    {
+      "pct_targeted": 90,
+      "n_customers": 4500,
+      "incremental_revenue": 10689.35,
+      "discount_cost": 22500.0,
+      "net_roi": -11810.65,
+      "roi_pct": -52.5
+    },
+    {
+      "pct_targeted": 95,
+      "n_customers": 4750,
+      "incremental_revenue": 10689.35,
+      "discount_cost": 23750.0,
+      "net_roi": -13060.65,
+      "roi_pct": -55.0
+    },
+    {
+      "pct_targeted": 100,
+      "n_customers": 5000,
+      "incremental_revenue": 10689.35,
+      "discount_cost": 25000.0,
+      "net_roi": -14310.65,
+      "roi_pct": -57.2
+    }
+  ],
+  "best_roi": {
+    "pct_targeted": 10,
+    "n_customers": 500,
+    "incremental_revenue": 2463.46,
+    "discount_cost": 2500.0,
+    "net_roi": -36.54,
+    "roi_pct": -1.5
+  },
+  "pca_clusters": [
+    {
+      "x": 0.612,
+      "y": 0.239,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.2442
+    },
+    {
+      "x": -1.139,
+      "y": 0.8,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.0715
+    },
+    {
+      "x": -0.275,
+      "y": 0.13,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.1343
+    },
+    {
+      "x": -0.166,
+      "y": 0.346,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.2101
+    },
+    {
+      "x": 0.238,
+      "y": 0.596,
+      "cluster": 0,
+      "segment": "Persuadable",
+      "uplift": 0.1545
+    },
+    {
+      "x": -1.319,
+      "y": 0.84,
+      "cluster": 3,
+      "segment": "Moderate Responder",
+      "uplift": 0.0946
+    },
+    {
+      "x": -0.647,
+      "y": 0.953,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.1747
+    },
+    {
+      "x": -0.076,
+      "y": 0.712,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.2511
+    },
+    {
+      "x": 0.494,
+      "y": 0.257,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.118
+    },
+    {
+      "x": -1.376,
+      "y": -1.269,
+      "cluster": 0,
+      "segment": "Persuadable",
+      "uplift": 0.2157
+    },
+    {
+      "x": 1.976,
+      "y": 0.04,
+      "cluster": 2,
+      "segment": "Persuadable",
+      "uplift": 0.2077
+    },
+    {
+      "x": -0.075,
+      "y": 0.356,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.2243
+    },
+    {
+      "x": -1.923,
+      "y": 0.116,
+      "cluster": 0,
+      "segment": "Persuadable",
+      "uplift": 0.1605
+    },
+    {
+      "x": 1.746,
+      "y": -0.628,
+      "cluster": 2,
+      "segment": "Persuadable",
+      "uplift": 0.2205
+    },
+    {
+      "x": 0.533,
+      "y": 1.168,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.2474
+    },
+    {
+      "x": 0.153,
+      "y": 0.043,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.0853
+    },
+    {
+      "x": -1.446,
+      "y": 1.055,
+      "cluster": 0,
+      "segment": "Do-Not-Disturb",
+      "uplift": -0.0661
+    },
+    {
+      "x": 0.389,
+      "y": 0.016,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.1468
+    },
+    {
+      "x": -0.729,
+      "y": 0.722,
+      "cluster": 0,
+      "segment": "Persuadable",
+      "uplift": 0.2146
+    },
+    {
+      "x": 0.508,
+      "y": 0.46,
+      "cluster": 3,
+      "segment": "Moderate Responder",
+      "uplift": 0.1124
+    },
+    {
+      "x": -1.122,
+      "y": 1.391,
+      "cluster": 0,
+      "segment": "Persuadable",
+      "uplift": 0.3442
+    },
+    {
+      "x": -1.039,
+      "y": 0.115,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.0573
+    },
+    {
+      "x": 2.244,
+      "y": 0.366,
+      "cluster": 2,
+      "segment": "Persuadable",
+      "uplift": 0.2303
+    },
+    {
+      "x": -1.57,
+      "y": -1.871,
+      "cluster": 1,
+      "segment": "Sure Thing / Neutral",
+      "uplift": 0.0153
+    },
+    {
+      "x": -0.98,
+      "y": -0.672,
+      "cluster": 1,
+      "segment": "Moderate Responder",
+      "uplift": 0.1309
+    },
+    {
+      "x": 0.328,
+      "y": 0.566,
+      "cluster": 3,
+      "segment": "Moderate Responder",
+      "uplift": 0.1402
+    },
+    {
+      "x": 0.131,
+      "y": 1.021,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.2233
+    },
+    {
+      "x": -0.947,
+      "y": 0.868,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.188
+    },
+    {
+      "x": -2.7,
+      "y": -0.848,
+      "cluster": 1,
+      "segment": "Persuadable",
+      "uplift": 0.1623
+    },
+    {
+      "x": -0.64,
+      "y": -0.223,
+      "cluster": 3,
+      "segment": "Moderate Responder",
+      "uplift": 0.0914
+    },
+    {
+      "x": 1.408,
+      "y": -0.5,
+      "cluster": 2,
+      "segment": "Persuadable",
+      "uplift": 0.2426
+    },
+    {
+      "x": -0.444,
+      "y": 0.529,
+      "cluster": 0,
+      "segment": "Persuadable",
+      "uplift": 0.1617
+    },
+    {
+      "x": -2.874,
+      "y": -0.685,
+      "cluster": 1,
+      "segment": "Persuadable",
+      "uplift": 0.2579
+    },
+    {
+      "x": 0.862,
+      "y": 0.558,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.3989
+    },
+    {
+      "x": 0.102,
+      "y": 0.893,
+      "cluster": 0,
+      "segment": "Persuadable",
+      "uplift": 0.2847
+    },
+    {
+      "x": 1.965,
+      "y": -1.306,
+      "cluster": 2,
+      "segment": "Persuadable",
+      "uplift": 0.1732
+    },
+    {
+      "x": 0.096,
+      "y": 0.749,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.1906
+    },
+    {
+      "x": -0.641,
+      "y": 1.312,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.1089
+    },
+    {
+      "x": -0.234,
+      "y": 0.242,
+      "cluster": 0,
+      "segment": "Sure Thing / Neutral",
+      "uplift": 0.0322
+    },
+    {
+      "x": 0.443,
+      "y": 0.545,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.2144
+    },
+    {
+      "x": -0.355,
+      "y": 0.262,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.0995
+    },
+    {
+      "x": 3.059,
+      "y": -0.621,
+      "cluster": 2,
+      "segment": "Persuadable",
+      "uplift": 0.1545
+    },
+    {
+      "x": 1.648,
+      "y": -0.971,
+      "cluster": 2,
+      "segment": "Persuadable",
+      "uplift": 0.1698
+    },
+    {
+      "x": 0.769,
+      "y": 0.294,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.158
+    },
+    {
+      "x": -0.396,
+      "y": 0.438,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.1978
+    },
+    {
+      "x": -1.546,
+      "y": 0.339,
+      "cluster": 0,
+      "segment": "Sure Thing / Neutral",
+      "uplift": 0.0497
+    },
+    {
+      "x": -0.863,
+      "y": -0.75,
+      "cluster": 0,
+      "segment": "Persuadable",
+      "uplift": 0.2174
+    },
+    {
+      "x": -1.729,
+      "y": 1.73,
+      "cluster": 3,
+      "segment": "Moderate Responder",
+      "uplift": 0.0556
+    },
+    {
+      "x": -2.003,
+      "y": -2.355,
+      "cluster": 1,
+      "segment": "Sure Thing / Neutral",
+      "uplift": 0.0028
+    },
+    {
+      "x": 2.455,
+      "y": -1.585,
+      "cluster": 2,
+      "segment": "Moderate Responder",
+      "uplift": 0.0758
+    },
+    {
+      "x": 0.546,
+      "y": -0.21,
+      "cluster": 2,
+      "segment": "Persuadable",
+      "uplift": 0.1925
+    },
+    {
+      "x": -1.404,
+      "y": 0.506,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.098
+    },
+    {
+      "x": 1.027,
+      "y": 0.76,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.1745
+    },
+    {
+      "x": 1.492,
+      "y": 0.137,
+      "cluster": 2,
+      "segment": "Persuadable",
+      "uplift": 0.2706
+    },
+    {
+      "x": -0.128,
+      "y": 0.479,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.1339
+    },
+    {
+      "x": -0.314,
+      "y": -1.362,
+      "cluster": 1,
+      "segment": "Moderate Responder",
+      "uplift": 0.1035
+    },
+    {
+      "x": -2.479,
+      "y": 0.685,
+      "cluster": 0,
+      "segment": "Sure Thing / Neutral",
+      "uplift": 0.0386
+    },
+    {
+      "x": -0.026,
+      "y": 0.564,
+      "cluster": 3,
+      "segment": "Moderate Responder",
+      "uplift": 0.1049
+    },
+    {
+      "x": 1.247,
+      "y": -0.451,
+      "cluster": 2,
+      "segment": "Sure Thing / Neutral",
+      "uplift": 0.0441
+    },
+    {
+      "x": 1.236,
+      "y": 0.092,
+      "cluster": 2,
+      "segment": "Persuadable",
+      "uplift": 0.1875
+    },
+    {
+      "x": -0.937,
+      "y": -1.862,
+      "cluster": 1,
+      "segment": "Moderate Responder",
+      "uplift": 0.0953
+    },
+    {
+      "x": -0.369,
+      "y": 0.534,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.0804
+    },
+    {
+      "x": -0.401,
+      "y": 1.285,
+      "cluster": 3,
+      "segment": "Moderate Responder",
+      "uplift": 0.0565
+    },
+    {
+      "x": 2.875,
+      "y": 1.351,
+      "cluster": 2,
+      "segment": "Persuadable",
+      "uplift": 0.32
+    },
+    {
+      "x": -1.16,
+      "y": -1.162,
+      "cluster": 1,
+      "segment": "Moderate Responder",
+      "uplift": 0.104
+    },
+    {
+      "x": -0.26,
+      "y": 0.825,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.2965
+    },
+    {
+      "x": -1.244,
+      "y": -0.182,
+      "cluster": 0,
+      "segment": "Sure Thing / Neutral",
+      "uplift": -0.0198
+    },
+    {
+      "x": 1.528,
+      "y": -0.453,
+      "cluster": 2,
+      "segment": "Moderate Responder",
+      "uplift": 0.1446
+    },
+    {
+      "x": 2.225,
+      "y": -0.325,
+      "cluster": 2,
+      "segment": "Persuadable",
+      "uplift": 0.2244
+    },
+    {
+      "x": -0.623,
+      "y": 1.144,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.1779
+    },
+    {
+      "x": 2.084,
+      "y": -0.236,
+      "cluster": 2,
+      "segment": "Persuadable",
+      "uplift": 0.2651
+    },
+    {
+      "x": -1.168,
+      "y": 2.201,
+      "cluster": 3,
+      "segment": "Sure Thing / Neutral",
+      "uplift": 0.0236
+    },
+    {
+      "x": 0.447,
+      "y": 0.879,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.201
+    },
+    {
+      "x": 1.231,
+      "y": -0.242,
+      "cluster": 2,
+      "segment": "Persuadable",
+      "uplift": 0.1648
+    },
+    {
+      "x": -1.568,
+      "y": 1.903,
+      "cluster": 0,
+      "segment": "Sure Thing / Neutral",
+      "uplift": 0.0466
+    },
+    {
+      "x": 2.788,
+      "y": -1.058,
+      "cluster": 2,
+      "segment": "Sure Thing / Neutral",
+      "uplift": -0.0329
+    },
+    {
+      "x": -0.559,
+      "y": -0.047,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.1277
+    },
+    {
+      "x": -0.461,
+      "y": 0.024,
+      "cluster": 0,
+      "segment": "Persuadable",
+      "uplift": 0.1637
+    },
+    {
+      "x": -0.172,
+      "y": 0.582,
+      "cluster": 0,
+      "segment": "Persuadable",
+      "uplift": 0.1706
+    },
+    {
+      "x": -1.055,
+      "y": -0.65,
+      "cluster": 1,
+      "segment": "Persuadable",
+      "uplift": 0.1882
+    },
+    {
+      "x": 0.35,
+      "y": 1.765,
+      "cluster": 3,
+      "segment": "Moderate Responder",
+      "uplift": 0.1332
+    },
+    {
+      "x": 0.419,
+      "y": 0.739,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.276
+    },
+    {
+      "x": 0.821,
+      "y": -0.225,
+      "cluster": 2,
+      "segment": "Persuadable",
+      "uplift": 0.1638
+    },
+    {
+      "x": 1.36,
+      "y": -0.489,
+      "cluster": 2,
+      "segment": "Persuadable",
+      "uplift": 0.2665
+    },
+    {
+      "x": 0.007,
+      "y": -0.083,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.1281
+    },
+    {
+      "x": -0.273,
+      "y": 0.455,
+      "cluster": 0,
+      "segment": "Persuadable",
+      "uplift": 0.2495
+    },
+    {
+      "x": 0.84,
+      "y": 0.709,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.2944
+    },
+    {
+      "x": 1.38,
+      "y": -0.126,
+      "cluster": 2,
+      "segment": "Moderate Responder",
+      "uplift": 0.1252
+    },
+    {
+      "x": 0.104,
+      "y": 0.003,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.1228
+    },
+    {
+      "x": -0.348,
+      "y": 0.331,
+      "cluster": 0,
+      "segment": "Persuadable",
+      "uplift": 0.2305
+    },
+    {
+      "x": 0.374,
+      "y": 0.085,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.0923
+    },
+    {
+      "x": -0.086,
+      "y": 1.312,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.2337
+    },
+    {
+      "x": -3.714,
+      "y": -0.114,
+      "cluster": 1,
+      "segment": "Sure Thing / Neutral",
+      "uplift": 0.0344
+    },
+    {
+      "x": -0.642,
+      "y": 1.892,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.1953
+    },
+    {
+      "x": -0.335,
+      "y": 1.291,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.1322
+    },
+    {
+      "x": -0.03,
+      "y": 0.666,
+      "cluster": 3,
+      "segment": "Moderate Responder",
+      "uplift": 0.1004
+    },
+    {
+      "x": -1.006,
+      "y": 0.834,
+      "cluster": 3,
+      "segment": "Do-Not-Disturb",
+      "uplift": -0.0563
+    },
+    {
+      "x": -1.108,
+      "y": 1.026,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.0903
+    },
+    {
+      "x": -0.464,
+      "y": -0.36,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.0833
+    },
+    {
+      "x": -2.659,
+      "y": 2.177,
+      "cluster": 3,
+      "segment": "Do-Not-Disturb",
+      "uplift": -0.1351
+    },
+    {
+      "x": 0.088,
+      "y": -0.765,
+      "cluster": 2,
+      "segment": "Do-Not-Disturb",
+      "uplift": -0.0547
+    },
+    {
+      "x": 0.094,
+      "y": -0.594,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.1378
+    },
+    {
+      "x": 0.989,
+      "y": -0.281,
+      "cluster": 2,
+      "segment": "Persuadable",
+      "uplift": 0.1507
+    },
+    {
+      "x": 1.149,
+      "y": -1.823,
+      "cluster": 2,
+      "segment": "Moderate Responder",
+      "uplift": 0.1254
+    },
+    {
+      "x": -0.482,
+      "y": 0.893,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.2011
+    },
+    {
+      "x": 1.197,
+      "y": 0.045,
+      "cluster": 2,
+      "segment": "Persuadable",
+      "uplift": 0.1795
+    },
+    {
+      "x": 0.959,
+      "y": -1.121,
+      "cluster": 2,
+      "segment": "Persuadable",
+      "uplift": 0.2299
+    },
+    {
+      "x": 1.578,
+      "y": -1.193,
+      "cluster": 2,
+      "segment": "Persuadable",
+      "uplift": 0.1501
+    },
+    {
+      "x": -1.165,
+      "y": 1.199,
+      "cluster": 3,
+      "segment": "Moderate Responder",
+      "uplift": 0.1344
+    },
+    {
+      "x": 3.673,
+      "y": -2.144,
+      "cluster": 2,
+      "segment": "Sure Thing / Neutral",
+      "uplift": 0.0237
+    },
+    {
+      "x": 1.06,
+      "y": 0.096,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.2729
+    },
+    {
+      "x": -0.744,
+      "y": 1.645,
+      "cluster": 3,
+      "segment": "Moderate Responder",
+      "uplift": 0.1301
+    },
+    {
+      "x": 0.689,
+      "y": 0.069,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.2665
+    },
+    {
+      "x": 0.831,
+      "y": 0.456,
+      "cluster": 2,
+      "segment": "Persuadable",
+      "uplift": 0.1776
+    },
+    {
+      "x": 0.761,
+      "y": 0.547,
+      "cluster": 0,
+      "segment": "Persuadable",
+      "uplift": 0.1792
+    },
+    {
+      "x": 1.051,
+      "y": 0.445,
+      "cluster": 2,
+      "segment": "Persuadable",
+      "uplift": 0.1892
+    },
+    {
+      "x": 0.877,
+      "y": -0.737,
+      "cluster": 2,
+      "segment": "Moderate Responder",
+      "uplift": 0.0894
+    },
+    {
+      "x": 0.365,
+      "y": -0.316,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.0922
+    },
+    {
+      "x": 0.165,
+      "y": -0.038,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.1062
+    },
+    {
+      "x": -0.693,
+      "y": -1.504,
+      "cluster": 1,
+      "segment": "Moderate Responder",
+      "uplift": 0.101
+    },
+    {
+      "x": -0.659,
+      "y": -1.482,
+      "cluster": 1,
+      "segment": "Sure Thing / Neutral",
+      "uplift": 0.0038
+    },
+    {
+      "x": -0.287,
+      "y": -1.385,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.1113
+    },
+    {
+      "x": 1.975,
+      "y": -0.452,
+      "cluster": 2,
+      "segment": "Persuadable",
+      "uplift": 0.2025
+    },
+    {
+      "x": -1.359,
+      "y": 1.216,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.1092
+    },
+    {
+      "x": 0.261,
+      "y": -1.379,
+      "cluster": 2,
+      "segment": "Moderate Responder",
+      "uplift": 0.0778
+    },
+    {
+      "x": 0.809,
+      "y": 0.736,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.1935
+    },
+    {
+      "x": 2.984,
+      "y": -1.361,
+      "cluster": 2,
+      "segment": "Moderate Responder",
+      "uplift": 0.0678
+    },
+    {
+      "x": -1.142,
+      "y": 1.055,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.2232
+    },
+    {
+      "x": 3.087,
+      "y": -0.739,
+      "cluster": 2,
+      "segment": "Persuadable",
+      "uplift": 0.15
+    },
+    {
+      "x": -0.464,
+      "y": 0.607,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.1675
+    },
+    {
+      "x": -1.603,
+      "y": -0.017,
+      "cluster": 0,
+      "segment": "Persuadable",
+      "uplift": 0.1503
+    },
+    {
+      "x": 1.363,
+      "y": -0.072,
+      "cluster": 2,
+      "segment": "Persuadable",
+      "uplift": 0.1898
+    },
+    {
+      "x": -0.565,
+      "y": 1.385,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.1048
+    },
+    {
+      "x": 0.44,
+      "y": -3.447,
+      "cluster": 1,
+      "segment": "Do-Not-Disturb",
+      "uplift": -0.193
+    },
+    {
+      "x": -0.441,
+      "y": 0.483,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.1222
+    },
+    {
+      "x": -2.013,
+      "y": -0.616,
+      "cluster": 1,
+      "segment": "Moderate Responder",
+      "uplift": 0.066
+    },
+    {
+      "x": -1.265,
+      "y": 0.699,
+      "cluster": 0,
+      "segment": "Persuadable",
+      "uplift": 0.1555
+    },
+    {
+      "x": 0.863,
+      "y": -0.163,
+      "cluster": 2,
+      "segment": "Persuadable",
+      "uplift": 0.2162
+    },
+    {
+      "x": -1.863,
+      "y": 0.276,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.1236
+    },
+    {
+      "x": 0.934,
+      "y": 0.693,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.3309
+    },
+    {
+      "x": 0.112,
+      "y": -0.841,
+      "cluster": 2,
+      "segment": "Persuadable",
+      "uplift": 0.164
+    },
+    {
+      "x": -0.893,
+      "y": -0.362,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.0737
+    },
+    {
+      "x": 0.017,
+      "y": 0.074,
+      "cluster": 0,
+      "segment": "Persuadable",
+      "uplift": 0.1577
+    },
+    {
+      "x": 0.385,
+      "y": -0.138,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.1432
+    },
+    {
+      "x": -0.892,
+      "y": 0.789,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.2039
+    },
+    {
+      "x": 0.703,
+      "y": 0.52,
+      "cluster": 0,
+      "segment": "Persuadable",
+      "uplift": 0.1993
+    },
+    {
+      "x": 0.217,
+      "y": -0.089,
+      "cluster": 0,
+      "segment": "Persuadable",
+      "uplift": 0.1539
+    },
+    {
+      "x": 0.375,
+      "y": -0.288,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.2566
+    },
+    {
+      "x": 0.54,
+      "y": -0.573,
+      "cluster": 2,
+      "segment": "Persuadable",
+      "uplift": 0.1645
+    },
+    {
+      "x": -0.281,
+      "y": -0.387,
+      "cluster": 0,
+      "segment": "Sure Thing / Neutral",
+      "uplift": 0.0218
+    },
+    {
+      "x": 0.604,
+      "y": -0.159,
+      "cluster": 2,
+      "segment": "Persuadable",
+      "uplift": 0.2129
+    },
+    {
+      "x": -0.15,
+      "y": 1.35,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.0926
+    },
+    {
+      "x": 0.06,
+      "y": -0.275,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.14
+    },
+    {
+      "x": 1.492,
+      "y": -0.075,
+      "cluster": 2,
+      "segment": "Persuadable",
+      "uplift": 0.1975
+    },
+    {
+      "x": 0.898,
+      "y": 0.426,
+      "cluster": 2,
+      "segment": "Sure Thing / Neutral",
+      "uplift": -0.0445
+    },
+    {
+      "x": -4.898,
+      "y": -3.485,
+      "cluster": 1,
+      "segment": "Persuadable",
+      "uplift": 0.3075
+    },
+    {
+      "x": 0.948,
+      "y": 1.816,
+      "cluster": 3,
+      "segment": "Moderate Responder",
+      "uplift": 0.1428
+    },
+    {
+      "x": 1.872,
+      "y": -0.874,
+      "cluster": 2,
+      "segment": "Persuadable",
+      "uplift": 0.2301
+    },
+    {
+      "x": 0.948,
+      "y": -0.095,
+      "cluster": 2,
+      "segment": "Moderate Responder",
+      "uplift": 0.122
+    },
+    {
+      "x": 0.714,
+      "y": 0.639,
+      "cluster": 0,
+      "segment": "Persuadable",
+      "uplift": 0.1635
+    },
+    {
+      "x": 1.347,
+      "y": 1.124,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.3136
+    },
+    {
+      "x": -0.381,
+      "y": 0.578,
+      "cluster": 3,
+      "segment": "Moderate Responder",
+      "uplift": 0.115
+    },
+    {
+      "x": 1.608,
+      "y": -0.338,
+      "cluster": 2,
+      "segment": "Persuadable",
+      "uplift": 0.1961
+    },
+    {
+      "x": -1.148,
+      "y": 1.694,
+      "cluster": 0,
+      "segment": "Persuadable",
+      "uplift": 0.2835
+    },
+    {
+      "x": -1.115,
+      "y": 1.567,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.1342
+    },
+    {
+      "x": 0.291,
+      "y": -0.236,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.1885
+    },
+    {
+      "x": -0.02,
+      "y": 0.942,
+      "cluster": 3,
+      "segment": "Moderate Responder",
+      "uplift": 0.0658
+    },
+    {
+      "x": -0.445,
+      "y": -1.183,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.0901
+    },
+    {
+      "x": 1.444,
+      "y": -0.199,
+      "cluster": 2,
+      "segment": "Moderate Responder",
+      "uplift": 0.128
+    },
+    {
+      "x": -0.047,
+      "y": 0.232,
+      "cluster": 0,
+      "segment": "Do-Not-Disturb",
+      "uplift": -0.2155
+    },
+    {
+      "x": -2.311,
+      "y": 1.528,
+      "cluster": 3,
+      "segment": "Do-Not-Disturb",
+      "uplift": -0.1038
+    },
+    {
+      "x": -0.369,
+      "y": -0.082,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.0771
+    },
+    {
+      "x": -1.611,
+      "y": 0.608,
+      "cluster": 0,
+      "segment": "Sure Thing / Neutral",
+      "uplift": -0.0332
+    },
+    {
+      "x": 1.918,
+      "y": -0.13,
+      "cluster": 2,
+      "segment": "Persuadable",
+      "uplift": 0.2045
+    },
+    {
+      "x": -2.264,
+      "y": -0.08,
+      "cluster": 1,
+      "segment": "Moderate Responder",
+      "uplift": 0.1077
+    },
+    {
+      "x": -2.606,
+      "y": -0.736,
+      "cluster": 1,
+      "segment": "Persuadable",
+      "uplift": 0.3332
+    },
+    {
+      "x": -0.683,
+      "y": 0.677,
+      "cluster": 0,
+      "segment": "Do-Not-Disturb",
+      "uplift": -0.1428
+    },
+    {
+      "x": 0.053,
+      "y": 0.155,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.1346
+    },
+    {
+      "x": 0.596,
+      "y": 0.304,
+      "cluster": 0,
+      "segment": "Persuadable",
+      "uplift": 0.1729
+    },
+    {
+      "x": 0.585,
+      "y": 0.588,
+      "cluster": 0,
+      "segment": "Persuadable",
+      "uplift": 0.2085
+    },
+    {
+      "x": 0.29,
+      "y": 0.998,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.109
+    },
+    {
+      "x": -1.569,
+      "y": 0.903,
+      "cluster": 0,
+      "segment": "Persuadable",
+      "uplift": 0.2693
+    },
+    {
+      "x": -1.516,
+      "y": 1.624,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.0844
+    },
+    {
+      "x": 0.046,
+      "y": 0.954,
+      "cluster": 0,
+      "segment": "Sure Thing / Neutral",
+      "uplift": 0.0494
+    },
+    {
+      "x": -2.022,
+      "y": -3.512,
+      "cluster": 1,
+      "segment": "Moderate Responder",
+      "uplift": 0.1054
+    },
+    {
+      "x": 1.708,
+      "y": 0.948,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.1699
+    },
+    {
+      "x": -1.077,
+      "y": 1.452,
+      "cluster": 0,
+      "segment": "Do-Not-Disturb",
+      "uplift": -0.0677
+    },
+    {
+      "x": 0.267,
+      "y": 0.626,
+      "cluster": 0,
+      "segment": "Persuadable",
+      "uplift": 0.2042
+    },
+    {
+      "x": -0.866,
+      "y": 1.027,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.2257
+    },
+    {
+      "x": 0.089,
+      "y": -0.696,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.1424
+    },
+    {
+      "x": -1.617,
+      "y": 0.122,
+      "cluster": 1,
+      "segment": "Do-Not-Disturb",
+      "uplift": -0.0832
+    },
+    {
+      "x": 0.096,
+      "y": -0.306,
+      "cluster": 0,
+      "segment": "Sure Thing / Neutral",
+      "uplift": 0.0172
+    },
+    {
+      "x": -0.642,
+      "y": -0.515,
+      "cluster": 3,
+      "segment": "Moderate Responder",
+      "uplift": 0.1416
+    },
+    {
+      "x": -1.198,
+      "y": 1.059,
+      "cluster": 3,
+      "segment": "Sure Thing / Neutral",
+      "uplift": -0.0339
+    },
+    {
+      "x": 0.935,
+      "y": 0.185,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.3765
+    },
+    {
+      "x": 0.129,
+      "y": 1.339,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.1831
+    },
+    {
+      "x": 0.204,
+      "y": 0.192,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.1188
+    },
+    {
+      "x": 0.88,
+      "y": 0.095,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.3073
+    },
+    {
+      "x": 2.021,
+      "y": -1.651,
+      "cluster": 2,
+      "segment": "Moderate Responder",
+      "uplift": 0.094
+    },
+    {
+      "x": -0.025,
+      "y": -1.593,
+      "cluster": 2,
+      "segment": "Moderate Responder",
+      "uplift": 0.0823
+    },
+    {
+      "x": -1.12,
+      "y": 0.589,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.1855
+    },
+    {
+      "x": -1.838,
+      "y": 1.178,
+      "cluster": 0,
+      "segment": "Do-Not-Disturb",
+      "uplift": -0.0599
+    },
+    {
+      "x": -0.277,
+      "y": 0.051,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.2538
+    },
+    {
+      "x": 1.079,
+      "y": -0.377,
+      "cluster": 2,
+      "segment": "Sure Thing / Neutral",
+      "uplift": 0.0492
+    },
+    {
+      "x": -3.003,
+      "y": -1.251,
+      "cluster": 1,
+      "segment": "Sure Thing / Neutral",
+      "uplift": -0.0121
+    },
+    {
+      "x": 1.15,
+      "y": -0.721,
+      "cluster": 2,
+      "segment": "Moderate Responder",
+      "uplift": 0.148
+    },
+    {
+      "x": 2.294,
+      "y": -0.735,
+      "cluster": 2,
+      "segment": "Moderate Responder",
+      "uplift": 0.1228
+    },
+    {
+      "x": 0.22,
+      "y": -0.268,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.2274
+    },
+    {
+      "x": 0.243,
+      "y": 0.614,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.0946
+    },
+    {
+      "x": 0.503,
+      "y": 0.237,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.0618
+    },
+    {
+      "x": -3.224,
+      "y": -1.823,
+      "cluster": 1,
+      "segment": "Moderate Responder",
+      "uplift": 0.1476
+    },
+    {
+      "x": 0.405,
+      "y": -0.075,
+      "cluster": 0,
+      "segment": "Persuadable",
+      "uplift": 0.337
+    },
+    {
+      "x": 0.486,
+      "y": -0.244,
+      "cluster": 2,
+      "segment": "Sure Thing / Neutral",
+      "uplift": 0.0057
+    },
+    {
+      "x": -0.167,
+      "y": -0.495,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.0601
+    },
+    {
+      "x": -0.583,
+      "y": 1.77,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.1809
+    },
+    {
+      "x": 0.912,
+      "y": 1.445,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.2867
+    },
+    {
+      "x": -2.946,
+      "y": -3.616,
+      "cluster": 1,
+      "segment": "Persuadable",
+      "uplift": 0.3417
+    },
+    {
+      "x": 0.296,
+      "y": -0.272,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.1405
+    },
+    {
+      "x": 0.737,
+      "y": -0.47,
+      "cluster": 2,
+      "segment": "Persuadable",
+      "uplift": 0.2431
+    },
+    {
+      "x": 0.782,
+      "y": -1.126,
+      "cluster": 2,
+      "segment": "Persuadable",
+      "uplift": 0.2424
+    },
+    {
+      "x": -1.492,
+      "y": -0.918,
+      "cluster": 1,
+      "segment": "Moderate Responder",
+      "uplift": 0.0906
+    },
+    {
+      "x": 0.874,
+      "y": 0.137,
+      "cluster": 2,
+      "segment": "Moderate Responder",
+      "uplift": 0.1164
+    },
+    {
+      "x": 1.724,
+      "y": 0.134,
+      "cluster": 2,
+      "segment": "Persuadable",
+      "uplift": 0.2326
+    },
+    {
+      "x": 0.271,
+      "y": -0.554,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.103
+    },
+    {
+      "x": 2.434,
+      "y": -0.173,
+      "cluster": 2,
+      "segment": "Persuadable",
+      "uplift": 0.1839
+    },
+    {
+      "x": 1.871,
+      "y": -0.345,
+      "cluster": 2,
+      "segment": "Moderate Responder",
+      "uplift": 0.1282
+    },
+    {
+      "x": 0.742,
+      "y": 0.816,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.332
+    },
+    {
+      "x": 2.248,
+      "y": -0.463,
+      "cluster": 2,
+      "segment": "Persuadable",
+      "uplift": 0.1695
+    },
+    {
+      "x": -0.275,
+      "y": -0.153,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.1038
+    },
+    {
+      "x": 1.927,
+      "y": -0.619,
+      "cluster": 2,
+      "segment": "Moderate Responder",
+      "uplift": 0.1312
+    },
+    {
+      "x": 0.697,
+      "y": -0.056,
+      "cluster": 0,
+      "segment": "Persuadable",
+      "uplift": 0.1842
+    },
+    {
+      "x": 1.224,
+      "y": 0.415,
+      "cluster": 2,
+      "segment": "Persuadable",
+      "uplift": 0.1599
+    },
+    {
+      "x": 0.356,
+      "y": 1.143,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.2891
+    },
+    {
+      "x": -0.339,
+      "y": -0.62,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.14
+    },
+    {
+      "x": 1.458,
+      "y": 0.708,
+      "cluster": 2,
+      "segment": "Persuadable",
+      "uplift": 0.3037
+    },
+    {
+      "x": 2.222,
+      "y": -0.977,
+      "cluster": 2,
+      "segment": "Moderate Responder",
+      "uplift": 0.0751
+    },
+    {
+      "x": 0.48,
+      "y": 0.087,
+      "cluster": 0,
+      "segment": "Sure Thing / Neutral",
+      "uplift": -0.0319
+    },
+    {
+      "x": 1.899,
+      "y": 0.112,
+      "cluster": 2,
+      "segment": "Sure Thing / Neutral",
+      "uplift": -0.013
+    },
+    {
+      "x": 0.286,
+      "y": -0.32,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.1319
+    },
+    {
+      "x": 0.302,
+      "y": 0.503,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.2295
+    },
+    {
+      "x": 1.555,
+      "y": -0.263,
+      "cluster": 2,
+      "segment": "Moderate Responder",
+      "uplift": 0.0997
+    },
+    {
+      "x": -0.653,
+      "y": -0.758,
+      "cluster": 1,
+      "segment": "Sure Thing / Neutral",
+      "uplift": -0.0041
+    },
+    {
+      "x": -0.768,
+      "y": 0.831,
+      "cluster": 0,
+      "segment": "Persuadable",
+      "uplift": 0.1714
+    },
+    {
+      "x": -0.118,
+      "y": 0.968,
+      "cluster": 3,
+      "segment": "Moderate Responder",
+      "uplift": 0.094
+    },
+    {
+      "x": -3.111,
+      "y": -1.689,
+      "cluster": 1,
+      "segment": "Do-Not-Disturb",
+      "uplift": -0.1949
+    },
+    {
+      "x": -0.347,
+      "y": 2.429,
+      "cluster": 3,
+      "segment": "Moderate Responder",
+      "uplift": 0.138
+    },
+    {
+      "x": 3.462,
+      "y": -1.518,
+      "cluster": 2,
+      "segment": "Moderate Responder",
+      "uplift": 0.1203
+    },
+    {
+      "x": -0.501,
+      "y": -1.815,
+      "cluster": 1,
+      "segment": "Sure Thing / Neutral",
+      "uplift": 0.0481
+    },
+    {
+      "x": 0.07,
+      "y": -1.593,
+      "cluster": 2,
+      "segment": "Moderate Responder",
+      "uplift": 0.1058
+    },
+    {
+      "x": -1.848,
+      "y": 1.699,
+      "cluster": 0,
+      "segment": "Persuadable",
+      "uplift": 0.2116
+    },
+    {
+      "x": 1.307,
+      "y": -0.54,
+      "cluster": 2,
+      "segment": "Persuadable",
+      "uplift": 0.2396
+    },
+    {
+      "x": -0.481,
+      "y": 1.077,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.114
+    },
+    {
+      "x": 1.174,
+      "y": 1.045,
+      "cluster": 0,
+      "segment": "Persuadable",
+      "uplift": 0.2278
+    },
+    {
+      "x": -1.592,
+      "y": -0.25,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.1164
+    },
+    {
+      "x": -0.184,
+      "y": 2.027,
+      "cluster": 3,
+      "segment": "Moderate Responder",
+      "uplift": 0.1163
+    },
+    {
+      "x": -3.914,
+      "y": -1.97,
+      "cluster": 1,
+      "segment": "Persuadable",
+      "uplift": 0.1867
+    },
+    {
+      "x": 1.899,
+      "y": -0.251,
+      "cluster": 2,
+      "segment": "Moderate Responder",
+      "uplift": 0.1166
+    },
+    {
+      "x": -0.169,
+      "y": 0.944,
+      "cluster": 0,
+      "segment": "Persuadable",
+      "uplift": 0.192
+    },
+    {
+      "x": 2.522,
+      "y": -1.364,
+      "cluster": 2,
+      "segment": "Persuadable",
+      "uplift": 0.1757
+    },
+    {
+      "x": -0.381,
+      "y": -0.117,
+      "cluster": 0,
+      "segment": "Persuadable",
+      "uplift": 0.1935
+    },
+    {
+      "x": 1.285,
+      "y": 0.722,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.2516
+    },
+    {
+      "x": -0.773,
+      "y": -0.804,
+      "cluster": 1,
+      "segment": "Moderate Responder",
+      "uplift": 0.1317
+    },
+    {
+      "x": 0.082,
+      "y": -1.035,
+      "cluster": 2,
+      "segment": "Persuadable",
+      "uplift": 0.1753
+    },
+    {
+      "x": 0.792,
+      "y": 0.489,
+      "cluster": 2,
+      "segment": "Persuadable",
+      "uplift": 0.1921
+    },
+    {
+      "x": -0.476,
+      "y": 1.717,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.2131
+    },
+    {
+      "x": 1.921,
+      "y": -0.739,
+      "cluster": 2,
+      "segment": "Persuadable",
+      "uplift": 0.2096
+    },
+    {
+      "x": -1.06,
+      "y": 1.22,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.1447
+    },
+    {
+      "x": 1.657,
+      "y": 0.208,
+      "cluster": 2,
+      "segment": "Do-Not-Disturb",
+      "uplift": -0.0971
+    },
+    {
+      "x": -1.284,
+      "y": -2.35,
+      "cluster": 1,
+      "segment": "Moderate Responder",
+      "uplift": 0.0871
+    },
+    {
+      "x": -0.176,
+      "y": -0.028,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.0781
+    },
+    {
+      "x": 0.29,
+      "y": 0.226,
+      "cluster": 0,
+      "segment": "Persuadable",
+      "uplift": 0.1809
+    },
+    {
+      "x": -0.368,
+      "y": 0.991,
+      "cluster": 0,
+      "segment": "Persuadable",
+      "uplift": 0.1518
+    },
+    {
+      "x": -0.652,
+      "y": 0.85,
+      "cluster": 3,
+      "segment": "Moderate Responder",
+      "uplift": 0.0651
+    },
+    {
+      "x": 2.47,
+      "y": -0.889,
+      "cluster": 2,
+      "segment": "Persuadable",
+      "uplift": 0.1761
+    },
+    {
+      "x": -1.359,
+      "y": 0.707,
+      "cluster": 3,
+      "segment": "Moderate Responder",
+      "uplift": 0.1386
+    },
+    {
+      "x": -1.55,
+      "y": 1.222,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.1447
+    },
+    {
+      "x": -0.422,
+      "y": -1.387,
+      "cluster": 1,
+      "segment": "Moderate Responder",
+      "uplift": 0.0661
+    },
+    {
+      "x": 1.86,
+      "y": -0.076,
+      "cluster": 2,
+      "segment": "Persuadable",
+      "uplift": 0.1824
+    },
+    {
+      "x": -0.08,
+      "y": 1.119,
+      "cluster": 0,
+      "segment": "Persuadable",
+      "uplift": 0.2684
+    },
+    {
+      "x": -1.209,
+      "y": 0.762,
+      "cluster": 3,
+      "segment": "Moderate Responder",
+      "uplift": 0.1172
+    },
+    {
+      "x": 2.174,
+      "y": -0.748,
+      "cluster": 2,
+      "segment": "Moderate Responder",
+      "uplift": 0.1223
+    },
+    {
+      "x": 1.652,
+      "y": -1.078,
+      "cluster": 2,
+      "segment": "Moderate Responder",
+      "uplift": 0.0884
+    },
+    {
+      "x": -0.459,
+      "y": 0.146,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.1312
+    },
+    {
+      "x": -0.546,
+      "y": -0.636,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.0935
+    },
+    {
+      "x": -0.112,
+      "y": -0.037,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.0785
+    },
+    {
+      "x": 0.748,
+      "y": -1.169,
+      "cluster": 2,
+      "segment": "Persuadable",
+      "uplift": 0.2308
+    },
+    {
+      "x": 0.996,
+      "y": -0.472,
+      "cluster": 2,
+      "segment": "Sure Thing / Neutral",
+      "uplift": -0.0154
+    },
+    {
+      "x": 0.248,
+      "y": 0.191,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.1493
+    },
+    {
+      "x": -0.437,
+      "y": -1.165,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.099
+    },
+    {
+      "x": -4.761,
+      "y": -1.924,
+      "cluster": 1,
+      "segment": "Moderate Responder",
+      "uplift": 0.1382
+    },
+    {
+      "x": -0.756,
+      "y": 1.994,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.1776
+    },
+    {
+      "x": 0.054,
+      "y": -0.074,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.1126
+    },
+    {
+      "x": -1.474,
+      "y": -1.046,
+      "cluster": 1,
+      "segment": "Sure Thing / Neutral",
+      "uplift": 0.0437
+    },
+    {
+      "x": 0.729,
+      "y": 0.15,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.1473
+    },
+    {
+      "x": -0.184,
+      "y": -0.535,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.1473
+    },
+    {
+      "x": -0.868,
+      "y": 0.995,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.0985
+    },
+    {
+      "x": -1.628,
+      "y": 1.998,
+      "cluster": 0,
+      "segment": "Persuadable",
+      "uplift": 0.1992
+    },
+    {
+      "x": -0.203,
+      "y": -1.116,
+      "cluster": 0,
+      "segment": "Sure Thing / Neutral",
+      "uplift": 0.0391
+    },
+    {
+      "x": -0.453,
+      "y": 0.413,
+      "cluster": 0,
+      "segment": "Persuadable",
+      "uplift": 0.1973
+    },
+    {
+      "x": -0.429,
+      "y": 0.798,
+      "cluster": 3,
+      "segment": "Moderate Responder",
+      "uplift": 0.0906
+    },
+    {
+      "x": -0.066,
+      "y": -0.228,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.0709
+    },
+    {
+      "x": 2.509,
+      "y": -0.479,
+      "cluster": 2,
+      "segment": "Sure Thing / Neutral",
+      "uplift": -0.0451
+    },
+    {
+      "x": 1.38,
+      "y": -0.844,
+      "cluster": 2,
+      "segment": "Moderate Responder",
+      "uplift": 0.0811
+    },
+    {
+      "x": -0.916,
+      "y": -0.293,
+      "cluster": 1,
+      "segment": "Moderate Responder",
+      "uplift": 0.1286
+    },
+    {
+      "x": 0.108,
+      "y": 1.078,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.2002
+    },
+    {
+      "x": 0.479,
+      "y": 1.582,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.2704
+    },
+    {
+      "x": -3.721,
+      "y": 0.248,
+      "cluster": 1,
+      "segment": "Moderate Responder",
+      "uplift": 0.1389
+    },
+    {
+      "x": 0.589,
+      "y": 0.772,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.1925
+    },
+    {
+      "x": 0.19,
+      "y": 1.253,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.2729
+    },
+    {
+      "x": -1.267,
+      "y": -0.135,
+      "cluster": 0,
+      "segment": "Persuadable",
+      "uplift": 0.1761
+    },
+    {
+      "x": -1.89,
+      "y": 0.663,
+      "cluster": 0,
+      "segment": "Persuadable",
+      "uplift": 0.1652
+    },
+    {
+      "x": 0.695,
+      "y": 0.369,
+      "cluster": 2,
+      "segment": "Moderate Responder",
+      "uplift": 0.1355
+    },
+    {
+      "x": 1.075,
+      "y": -0.334,
+      "cluster": 2,
+      "segment": "Moderate Responder",
+      "uplift": 0.1205
+    },
+    {
+      "x": 0.104,
+      "y": -2.585,
+      "cluster": 2,
+      "segment": "Sure Thing / Neutral",
+      "uplift": -0.0043
+    },
+    {
+      "x": -0.574,
+      "y": 0.869,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.1067
+    },
+    {
+      "x": -2.511,
+      "y": -0.952,
+      "cluster": 1,
+      "segment": "Persuadable",
+      "uplift": 0.164
+    },
+    {
+      "x": 0.564,
+      "y": 0.23,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.1706
+    },
+    {
+      "x": 2.034,
+      "y": -1.204,
+      "cluster": 2,
+      "segment": "Persuadable",
+      "uplift": 0.2426
+    },
+    {
+      "x": -0.571,
+      "y": 0.932,
+      "cluster": 0,
+      "segment": "Persuadable",
+      "uplift": 0.1751
+    },
+    {
+      "x": 2.364,
+      "y": -1.396,
+      "cluster": 2,
+      "segment": "Moderate Responder",
+      "uplift": 0.0907
+    },
+    {
+      "x": -2.868,
+      "y": 0.359,
+      "cluster": 1,
+      "segment": "Sure Thing / Neutral",
+      "uplift": -0.0105
+    },
+    {
+      "x": -0.206,
+      "y": 0.674,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.1037
+    },
+    {
+      "x": -1.135,
+      "y": 0.038,
+      "cluster": 0,
+      "segment": "Sure Thing / Neutral",
+      "uplift": 0.0435
+    },
+    {
+      "x": 0.847,
+      "y": 0.299,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.2539
+    },
+    {
+      "x": -2.164,
+      "y": 0.076,
+      "cluster": 1,
+      "segment": "Persuadable",
+      "uplift": 0.1812
+    },
+    {
+      "x": 2.682,
+      "y": -0.573,
+      "cluster": 2,
+      "segment": "Sure Thing / Neutral",
+      "uplift": 0.0441
+    },
+    {
+      "x": 0.297,
+      "y": -0.034,
+      "cluster": 0,
+      "segment": "Persuadable",
+      "uplift": 0.1643
+    },
+    {
+      "x": 0.556,
+      "y": 0.4,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.1455
+    },
+    {
+      "x": -1.269,
+      "y": -0.356,
+      "cluster": 1,
+      "segment": "Sure Thing / Neutral",
+      "uplift": 0.0271
+    },
+    {
+      "x": 0.138,
+      "y": 0.452,
+      "cluster": 0,
+      "segment": "Persuadable",
+      "uplift": 0.2264
+    },
+    {
+      "x": -0.019,
+      "y": 0.415,
+      "cluster": 0,
+      "segment": "Sure Thing / Neutral",
+      "uplift": 0.0011
+    },
+    {
+      "x": -0.14,
+      "y": 0.029,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.3112
+    },
+    {
+      "x": 0.855,
+      "y": 1.088,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.2272
+    },
+    {
+      "x": 2.453,
+      "y": -0.824,
+      "cluster": 2,
+      "segment": "Persuadable",
+      "uplift": 0.1903
+    },
+    {
+      "x": -2.002,
+      "y": -0.856,
+      "cluster": 1,
+      "segment": "Moderate Responder",
+      "uplift": 0.0647
+    },
+    {
+      "x": -0.213,
+      "y": 1.39,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.1229
+    },
+    {
+      "x": -0.672,
+      "y": -1.449,
+      "cluster": 1,
+      "segment": "Persuadable",
+      "uplift": 0.1678
+    },
+    {
+      "x": -2.241,
+      "y": 1.466,
+      "cluster": 0,
+      "segment": "Persuadable",
+      "uplift": 0.238
+    },
+    {
+      "x": 0.147,
+      "y": -0.313,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.114
+    },
+    {
+      "x": 0.35,
+      "y": 1.355,
+      "cluster": 3,
+      "segment": "Moderate Responder",
+      "uplift": 0.1295
+    },
+    {
+      "x": 1.304,
+      "y": 1.119,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.2617
+    },
+    {
+      "x": 0.14,
+      "y": 0.195,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.1339
+    },
+    {
+      "x": 1.758,
+      "y": -0.547,
+      "cluster": 2,
+      "segment": "Moderate Responder",
+      "uplift": 0.0624
+    },
+    {
+      "x": 1.684,
+      "y": 0.462,
+      "cluster": 2,
+      "segment": "Persuadable",
+      "uplift": 0.3017
+    },
+    {
+      "x": 0.508,
+      "y": 0.525,
+      "cluster": 0,
+      "segment": "Sure Thing / Neutral",
+      "uplift": 0.046
+    },
+    {
+      "x": -1.093,
+      "y": -0.927,
+      "cluster": 1,
+      "segment": "Sure Thing / Neutral",
+      "uplift": -0.0139
+    },
+    {
+      "x": -0.573,
+      "y": -3.086,
+      "cluster": 1,
+      "segment": "Sure Thing / Neutral",
+      "uplift": 0.0101
+    },
+    {
+      "x": -0.628,
+      "y": -0.837,
+      "cluster": 1,
+      "segment": "Moderate Responder",
+      "uplift": 0.1289
+    },
+    {
+      "x": 1.006,
+      "y": 0.526,
+      "cluster": 2,
+      "segment": "Persuadable",
+      "uplift": 0.2102
+    },
+    {
+      "x": 0.958,
+      "y": -0.251,
+      "cluster": 2,
+      "segment": "Persuadable",
+      "uplift": 0.1823
+    },
+    {
+      "x": -0.632,
+      "y": -1.004,
+      "cluster": 1,
+      "segment": "Moderate Responder",
+      "uplift": 0.0685
+    },
+    {
+      "x": 0.385,
+      "y": -0.53,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.1436
+    },
+    {
+      "x": -0.136,
+      "y": -0.544,
+      "cluster": 3,
+      "segment": "Sure Thing / Neutral",
+      "uplift": 0.0485
+    },
+    {
+      "x": -0.802,
+      "y": 1.059,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.2156
+    },
+    {
+      "x": 0.256,
+      "y": -1.037,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.1419
+    },
+    {
+      "x": 2.913,
+      "y": -0.67,
+      "cluster": 2,
+      "segment": "Moderate Responder",
+      "uplift": 0.1083
+    },
+    {
+      "x": -1.774,
+      "y": -0.029,
+      "cluster": 1,
+      "segment": "Persuadable",
+      "uplift": 0.2467
+    },
+    {
+      "x": 1.01,
+      "y": 0.273,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.1785
+    },
+    {
+      "x": 1.41,
+      "y": -0.324,
+      "cluster": 2,
+      "segment": "Persuadable",
+      "uplift": 0.1612
+    },
+    {
+      "x": -0.473,
+      "y": 1.123,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.148
+    },
+    {
+      "x": 1.11,
+      "y": 0.623,
+      "cluster": 2,
+      "segment": "Persuadable",
+      "uplift": 0.3667
+    },
+    {
+      "x": -1.521,
+      "y": 0.075,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.1165
+    },
+    {
+      "x": -1.069,
+      "y": 1.685,
+      "cluster": 3,
+      "segment": "Moderate Responder",
+      "uplift": 0.0992
+    },
+    {
+      "x": 2.002,
+      "y": 0.726,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.3756
+    },
+    {
+      "x": -0.033,
+      "y": 0.646,
+      "cluster": 3,
+      "segment": "Moderate Responder",
+      "uplift": 0.0677
+    },
+    {
+      "x": 0.523,
+      "y": 1.487,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.304
+    },
+    {
+      "x": -1.55,
+      "y": 0.382,
+      "cluster": 1,
+      "segment": "Sure Thing / Neutral",
+      "uplift": 0.0487
+    },
+    {
+      "x": 1.307,
+      "y": -1.211,
+      "cluster": 2,
+      "segment": "Moderate Responder",
+      "uplift": 0.1199
+    },
+    {
+      "x": 2.357,
+      "y": -0.138,
+      "cluster": 2,
+      "segment": "Persuadable",
+      "uplift": 0.2866
+    },
+    {
+      "x": 2.408,
+      "y": -2.202,
+      "cluster": 2,
+      "segment": "Sure Thing / Neutral",
+      "uplift": -0.0473
+    },
+    {
+      "x": -0.392,
+      "y": 0.168,
+      "cluster": 3,
+      "segment": "Moderate Responder",
+      "uplift": 0.1076
+    },
+    {
+      "x": -2.493,
+      "y": -0.21,
+      "cluster": 1,
+      "segment": "Do-Not-Disturb",
+      "uplift": -0.1465
+    },
+    {
+      "x": -0.105,
+      "y": 1.349,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.2138
+    },
+    {
+      "x": -0.288,
+      "y": -0.553,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.1341
+    },
+    {
+      "x": -1.304,
+      "y": -2.046,
+      "cluster": 1,
+      "segment": "Sure Thing / Neutral",
+      "uplift": -0.0255
+    },
+    {
+      "x": 1.799,
+      "y": -1.016,
+      "cluster": 2,
+      "segment": "Sure Thing / Neutral",
+      "uplift": -0.0072
+    },
+    {
+      "x": -0.759,
+      "y": -0.6,
+      "cluster": 1,
+      "segment": "Persuadable",
+      "uplift": 0.1566
+    },
+    {
+      "x": 0.153,
+      "y": -0.283,
+      "cluster": 0,
+      "segment": "Persuadable",
+      "uplift": 0.2271
+    },
+    {
+      "x": 0.947,
+      "y": 0.385,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.2854
+    },
+    {
+      "x": 1.421,
+      "y": 0.265,
+      "cluster": 2,
+      "segment": "Moderate Responder",
+      "uplift": 0.1301
+    },
+    {
+      "x": 0.746,
+      "y": 0.751,
+      "cluster": 0,
+      "segment": "Persuadable",
+      "uplift": 0.2509
+    },
+    {
+      "x": 0.399,
+      "y": 0.185,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.1759
+    },
+    {
+      "x": 1.195,
+      "y": -0.037,
+      "cluster": 2,
+      "segment": "Moderate Responder",
+      "uplift": 0.1482
+    },
+    {
+      "x": -0.133,
+      "y": 0.858,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.138
+    },
+    {
+      "x": -1.283,
+      "y": -1.566,
+      "cluster": 1,
+      "segment": "Persuadable",
+      "uplift": 0.1609
+    },
+    {
+      "x": -1.076,
+      "y": 0.531,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.136
+    },
+    {
+      "x": 0.843,
+      "y": -0.423,
+      "cluster": 2,
+      "segment": "Persuadable",
+      "uplift": 0.1992
+    },
+    {
+      "x": -1.506,
+      "y": 1.217,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.1346
+    },
+    {
+      "x": -0.297,
+      "y": -2.037,
+      "cluster": 1,
+      "segment": "Moderate Responder",
+      "uplift": 0.0907
+    },
+    {
+      "x": 2.822,
+      "y": -1.366,
+      "cluster": 2,
+      "segment": "Moderate Responder",
+      "uplift": 0.1034
+    },
+    {
+      "x": -0.475,
+      "y": -0.031,
+      "cluster": 0,
+      "segment": "Persuadable",
+      "uplift": 0.162
+    },
+    {
+      "x": 1.024,
+      "y": 0.595,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.1519
+    },
+    {
+      "x": 0.501,
+      "y": 0.21,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.0956
+    },
+    {
+      "x": 2.183,
+      "y": -1.134,
+      "cluster": 2,
+      "segment": "Sure Thing / Neutral",
+      "uplift": 0.0376
+    },
+    {
+      "x": -0.657,
+      "y": 0.211,
+      "cluster": 0,
+      "segment": "Persuadable",
+      "uplift": 0.1521
+    },
+    {
+      "x": 0.367,
+      "y": 0.189,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.1351
+    },
+    {
+      "x": 1.354,
+      "y": 0.033,
+      "cluster": 2,
+      "segment": "Moderate Responder",
+      "uplift": 0.1485
+    },
+    {
+      "x": 0.636,
+      "y": 0.975,
+      "cluster": 0,
+      "segment": "Persuadable",
+      "uplift": 0.1958
+    },
+    {
+      "x": -0.364,
+      "y": -0.134,
+      "cluster": 0,
+      "segment": "Persuadable",
+      "uplift": 0.1722
+    },
+    {
+      "x": 0.552,
+      "y": -0.096,
+      "cluster": 2,
+      "segment": "Moderate Responder",
+      "uplift": 0.0787
+    },
+    {
+      "x": -0.345,
+      "y": 0.195,
+      "cluster": 0,
+      "segment": "Persuadable",
+      "uplift": 0.1698
+    },
+    {
+      "x": -0.881,
+      "y": 0.497,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.183
+    },
+    {
+      "x": -1.173,
+      "y": -0.732,
+      "cluster": 1,
+      "segment": "Moderate Responder",
+      "uplift": 0.1247
+    },
+    {
+      "x": -1.152,
+      "y": -1.117,
+      "cluster": 1,
+      "segment": "Moderate Responder",
+      "uplift": 0.1398
+    },
+    {
+      "x": -2.396,
+      "y": -0.299,
+      "cluster": 1,
+      "segment": "Moderate Responder",
+      "uplift": 0.0801
+    },
+    {
+      "x": -1.05,
+      "y": -1.24,
+      "cluster": 1,
+      "segment": "Moderate Responder",
+      "uplift": 0.1068
+    },
+    {
+      "x": -2.559,
+      "y": -2.313,
+      "cluster": 1,
+      "segment": "Persuadable",
+      "uplift": 0.2679
+    },
+    {
+      "x": 2.2,
+      "y": -0.188,
+      "cluster": 2,
+      "segment": "Persuadable",
+      "uplift": 0.2206
+    },
+    {
+      "x": 2.123,
+      "y": -0.121,
+      "cluster": 2,
+      "segment": "Persuadable",
+      "uplift": 0.2115
+    },
+    {
+      "x": 2.403,
+      "y": -1.222,
+      "cluster": 2,
+      "segment": "Moderate Responder",
+      "uplift": 0.129
+    },
+    {
+      "x": 1.283,
+      "y": 0.871,
+      "cluster": 2,
+      "segment": "Persuadable",
+      "uplift": 0.1847
+    },
+    {
+      "x": -0.586,
+      "y": -1.401,
+      "cluster": 1,
+      "segment": "Moderate Responder",
+      "uplift": 0.0745
+    },
+    {
+      "x": -0.486,
+      "y": 0.341,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.0789
+    },
+    {
+      "x": 0.471,
+      "y": 0.825,
+      "cluster": 0,
+      "segment": "Persuadable",
+      "uplift": 0.1706
+    },
+    {
+      "x": 0.929,
+      "y": -0.367,
+      "cluster": 2,
+      "segment": "Persuadable",
+      "uplift": 0.1929
+    },
+    {
+      "x": 0.534,
+      "y": 0.216,
+      "cluster": 3,
+      "segment": "Moderate Responder",
+      "uplift": 0.119
+    },
+    {
+      "x": -1.935,
+      "y": 1.279,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.0992
+    },
+    {
+      "x": -2.495,
+      "y": -0.326,
+      "cluster": 1,
+      "segment": "Do-Not-Disturb",
+      "uplift": -0.0584
+    },
+    {
+      "x": 1.356,
+      "y": -0.945,
+      "cluster": 2,
+      "segment": "Persuadable",
+      "uplift": 0.2661
+    },
+    {
+      "x": 0.711,
+      "y": 0.242,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.1516
+    },
+    {
+      "x": 0.739,
+      "y": -0.173,
+      "cluster": 2,
+      "segment": "Moderate Responder",
+      "uplift": 0.1415
+    },
+    {
+      "x": 0.152,
+      "y": 0.689,
+      "cluster": 3,
+      "segment": "Moderate Responder",
+      "uplift": 0.1304
+    },
+    {
+      "x": -0.477,
+      "y": 1.253,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.2051
+    },
+    {
+      "x": -0.77,
+      "y": -2.061,
+      "cluster": 1,
+      "segment": "Moderate Responder",
+      "uplift": 0.117
+    },
+    {
+      "x": -0.272,
+      "y": -0.054,
+      "cluster": 0,
+      "segment": "Persuadable",
+      "uplift": 0.1563
+    },
+    {
+      "x": -1.89,
+      "y": -1.69,
+      "cluster": 1,
+      "segment": "Moderate Responder",
+      "uplift": 0.1241
+    },
+    {
+      "x": -2.889,
+      "y": -1.232,
+      "cluster": 1,
+      "segment": "Sure Thing / Neutral",
+      "uplift": 0.0228
+    },
+    {
+      "x": 0.278,
+      "y": 0.248,
+      "cluster": 3,
+      "segment": "Moderate Responder",
+      "uplift": 0.1002
+    },
+    {
+      "x": 0.715,
+      "y": 0.675,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.2394
+    },
+    {
+      "x": -1.238,
+      "y": 0.328,
+      "cluster": 0,
+      "segment": "Persuadable",
+      "uplift": 0.1889
+    },
+    {
+      "x": -1.347,
+      "y": -0.245,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.0784
+    },
+    {
+      "x": 1.249,
+      "y": 0.815,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.2589
+    },
+    {
+      "x": -0.645,
+      "y": 0.505,
+      "cluster": 0,
+      "segment": "Sure Thing / Neutral",
+      "uplift": -0.008
+    },
+    {
+      "x": 1.884,
+      "y": 0.454,
+      "cluster": 2,
+      "segment": "Persuadable",
+      "uplift": 0.2307
+    },
+    {
+      "x": 0.366,
+      "y": 0.898,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.157
+    },
+    {
+      "x": -2.303,
+      "y": -1.504,
+      "cluster": 1,
+      "segment": "Persuadable",
+      "uplift": 0.1803
+    },
+    {
+      "x": -0.626,
+      "y": -0.812,
+      "cluster": 1,
+      "segment": "Sure Thing / Neutral",
+      "uplift": 0.0468
+    },
+    {
+      "x": -1.7,
+      "y": -1.93,
+      "cluster": 1,
+      "segment": "Sure Thing / Neutral",
+      "uplift": -0.0024
+    },
+    {
+      "x": 0.052,
+      "y": -0.721,
+      "cluster": 2,
+      "segment": "Moderate Responder",
+      "uplift": 0.0989
+    },
+    {
+      "x": -0.78,
+      "y": -1.282,
+      "cluster": 1,
+      "segment": "Moderate Responder",
+      "uplift": 0.1472
+    },
+    {
+      "x": 0.595,
+      "y": 0.944,
+      "cluster": 3,
+      "segment": "Moderate Responder",
+      "uplift": 0.1324
+    },
+    {
+      "x": 0.953,
+      "y": -0.653,
+      "cluster": 2,
+      "segment": "Persuadable",
+      "uplift": 0.3506
+    },
+    {
+      "x": -0.058,
+      "y": 1.428,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.1838
+    },
+    {
+      "x": 0.313,
+      "y": -0.023,
+      "cluster": 0,
+      "segment": "Sure Thing / Neutral",
+      "uplift": -0.008
+    },
+    {
+      "x": 0.84,
+      "y": 0.428,
+      "cluster": 2,
+      "segment": "Persuadable",
+      "uplift": 0.2636
+    },
+    {
+      "x": 1.049,
+      "y": -0.487,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.2796
+    },
+    {
+      "x": 0.184,
+      "y": -0.39,
+      "cluster": 0,
+      "segment": "Persuadable",
+      "uplift": 0.1906
+    },
+    {
+      "x": -0.098,
+      "y": 1.941,
+      "cluster": 3,
+      "segment": "Moderate Responder",
+      "uplift": 0.0845
+    },
+    {
+      "x": 1.266,
+      "y": 0.215,
+      "cluster": 2,
+      "segment": "Persuadable",
+      "uplift": 0.1926
+    },
+    {
+      "x": 0.209,
+      "y": 0.838,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.3298
+    },
+    {
+      "x": 0.092,
+      "y": -0.394,
+      "cluster": 0,
+      "segment": "Persuadable",
+      "uplift": 0.1557
+    },
+    {
+      "x": -0.843,
+      "y": -1.795,
+      "cluster": 1,
+      "segment": "Sure Thing / Neutral",
+      "uplift": -0.0072
+    },
+    {
+      "x": -1.297,
+      "y": 0.54,
+      "cluster": 0,
+      "segment": "Sure Thing / Neutral",
+      "uplift": -0.0072
+    },
+    {
+      "x": 0.11,
+      "y": 1.441,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.316
+    },
+    {
+      "x": 1.579,
+      "y": 0.19,
+      "cluster": 2,
+      "segment": "Persuadable",
+      "uplift": 0.3463
+    },
+    {
+      "x": -0.718,
+      "y": -0.104,
+      "cluster": 0,
+      "segment": "Persuadable",
+      "uplift": 0.1509
+    },
+    {
+      "x": -0.147,
+      "y": -0.066,
+      "cluster": 0,
+      "segment": "Persuadable",
+      "uplift": 0.1716
+    },
+    {
+      "x": 0.573,
+      "y": 0.181,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.1842
+    },
+    {
+      "x": -1.059,
+      "y": 1.728,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.1678
+    },
+    {
+      "x": 0.426,
+      "y": 1.0,
+      "cluster": 3,
+      "segment": "Moderate Responder",
+      "uplift": 0.1313
+    },
+    {
+      "x": 0.759,
+      "y": 0.328,
+      "cluster": 2,
+      "segment": "Persuadable",
+      "uplift": 0.2139
+    },
+    {
+      "x": 0.178,
+      "y": 1.748,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.2516
+    },
+    {
+      "x": -0.302,
+      "y": 1.237,
+      "cluster": 0,
+      "segment": "Persuadable",
+      "uplift": 0.1913
+    },
+    {
+      "x": -0.248,
+      "y": -1.927,
+      "cluster": 1,
+      "segment": "Persuadable",
+      "uplift": 0.1796
+    },
+    {
+      "x": 0.199,
+      "y": -0.584,
+      "cluster": 2,
+      "segment": "Persuadable",
+      "uplift": 0.1946
+    },
+    {
+      "x": -0.727,
+      "y": -0.107,
+      "cluster": 0,
+      "segment": "Persuadable",
+      "uplift": 0.1766
+    },
+    {
+      "x": 1.735,
+      "y": 0.779,
+      "cluster": 2,
+      "segment": "Persuadable",
+      "uplift": 0.2549
+    },
+    {
+      "x": 0.358,
+      "y": -0.225,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.1835
+    },
+    {
+      "x": -1.771,
+      "y": -0.43,
+      "cluster": 1,
+      "segment": "Persuadable",
+      "uplift": 0.1964
+    },
+    {
+      "x": 0.684,
+      "y": -0.377,
+      "cluster": 0,
+      "segment": "Persuadable",
+      "uplift": 0.2297
+    },
+    {
+      "x": 0.752,
+      "y": 0.677,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.2372
+    },
+    {
+      "x": -0.934,
+      "y": 0.193,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.0844
+    },
+    {
+      "x": -0.223,
+      "y": 0.028,
+      "cluster": 0,
+      "segment": "Persuadable",
+      "uplift": 0.1914
+    },
+    {
+      "x": 1.634,
+      "y": -0.966,
+      "cluster": 2,
+      "segment": "Moderate Responder",
+      "uplift": 0.0864
+    },
+    {
+      "x": -0.207,
+      "y": 1.434,
+      "cluster": 0,
+      "segment": "Persuadable",
+      "uplift": 0.272
+    },
+    {
+      "x": -2.321,
+      "y": 0.084,
+      "cluster": 1,
+      "segment": "Moderate Responder",
+      "uplift": 0.0814
+    },
+    {
+      "x": -0.497,
+      "y": -1.123,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.111
+    },
+    {
+      "x": -0.155,
+      "y": 0.577,
+      "cluster": 0,
+      "segment": "Persuadable",
+      "uplift": 0.2311
+    },
+    {
+      "x": -1.006,
+      "y": 0.048,
+      "cluster": 3,
+      "segment": "Sure Thing / Neutral",
+      "uplift": 0.0112
+    },
+    {
+      "x": -0.564,
+      "y": 0.549,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.1236
+    },
+    {
+      "x": -0.095,
+      "y": 0.943,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.2696
+    },
+    {
+      "x": 0.418,
+      "y": 1.037,
+      "cluster": 3,
+      "segment": "Moderate Responder",
+      "uplift": 0.1074
+    },
+    {
+      "x": -0.691,
+      "y": 1.371,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.1113
+    },
+    {
+      "x": 0.248,
+      "y": -0.442,
+      "cluster": 0,
+      "segment": "Sure Thing / Neutral",
+      "uplift": 0.0373
+    },
+    {
+      "x": -0.742,
+      "y": 0.82,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.1982
+    },
+    {
+      "x": 2.182,
+      "y": 0.076,
+      "cluster": 2,
+      "segment": "Persuadable",
+      "uplift": 0.1601
+    },
+    {
+      "x": 1.122,
+      "y": 0.185,
+      "cluster": 2,
+      "segment": "Persuadable",
+      "uplift": 0.232
+    },
+    {
+      "x": 1.791,
+      "y": -0.376,
+      "cluster": 2,
+      "segment": "Moderate Responder",
+      "uplift": 0.0888
+    },
+    {
+      "x": 1.61,
+      "y": 0.483,
+      "cluster": 2,
+      "segment": "Moderate Responder",
+      "uplift": 0.1481
+    },
+    {
+      "x": -2.485,
+      "y": -2.404,
+      "cluster": 1,
+      "segment": "Persuadable",
+      "uplift": 0.2226
+    },
+    {
+      "x": -0.186,
+      "y": -1.705,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.1316
+    },
+    {
+      "x": 0.985,
+      "y": -1.46,
+      "cluster": 2,
+      "segment": "Persuadable",
+      "uplift": 0.1922
+    },
+    {
+      "x": 1.232,
+      "y": -1.108,
+      "cluster": 2,
+      "segment": "Sure Thing / Neutral",
+      "uplift": -0.0027
+    },
+    {
+      "x": -0.397,
+      "y": -0.507,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.2854
+    },
+    {
+      "x": -0.486,
+      "y": 1.859,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.2856
+    },
+    {
+      "x": 0.817,
+      "y": 0.489,
+      "cluster": 3,
+      "segment": "Persuadable",
+      "uplift": 0.299
+    },
+    {
+      "x": -1.734,
+      "y": -0.895,
+      "cluster": 1,
+      "segment": "Persuadable",
+      "uplift": 0.2871
+    },
+    {
+      "x": -0.554,
+      "y": 1.043,
+      "cluster": 0,
+      "segment": "Moderate Responder",
+      "uplift": 0.1188
+    },
+    {
+      "x": 0.665,
+      "y": -0.431,
+      "cluster": 2,
+      "segment": "Persuadable",
+      "uplift": 0.1536
+    },
+    {
+      "x": 1.72,
+      "y": 0.489,
+      "cluster": 2,
+      "segment": "Persuadable",
+      "uplift": 0.3192
+    }
+  ],
+  "top_customers": [
+    {
+      "customer_id": "C03597",
+      "uplift_x": 0.4748,
+      "uplift_t": 0.4975999891757965,
+      "p_treated": 0.8776999711990356,
+      "p_control": 0.3799999952316284,
+      "segment": "Persuadable",
+      "purchase_frequency": 5,
+      "avg_basket_value": 24.35,
+      "rfm_score": 0.53,
+      "promo_sensitivity_score": 0.4414,
+      "treatment": 0,
+      "purchase": 0
+    },
+    {
+      "customer_id": "C03240",
+      "uplift_x": 0.4674,
+      "uplift_t": 0.592199981212616,
+      "p_treated": 0.946399986743927,
+      "p_control": 0.35409998893737793,
+      "segment": "Persuadable",
+      "purchase_frequency": 6,
+      "avg_basket_value": 32.23,
+      "rfm_score": 0.59,
+      "promo_sensitivity_score": 0.4209,
+      "treatment": 1,
+      "purchase": 1
+    },
+    {
+      "customer_id": "C00233",
+      "uplift_x": 0.4576,
+      "uplift_t": 0.5888000130653381,
+      "p_treated": 0.8992999792098999,
+      "p_control": 0.31049999594688416,
+      "segment": "Persuadable",
+      "purchase_frequency": 5,
+      "avg_basket_value": 34.16,
+      "rfm_score": 0.5207,
+      "promo_sensitivity_score": 0.4041,
+      "treatment": 1,
+      "purchase": 1
+    },
+    {
+      "customer_id": "C01384",
+      "uplift_x": 0.4522,
+      "uplift_t": 0.5097000002861023,
+      "p_treated": 0.8162000179290771,
+      "p_control": 0.30649998784065247,
+      "segment": "Persuadable",
+      "purchase_frequency": 3,
+      "avg_basket_value": 17.35,
+      "rfm_score": 0.2472,
+      "promo_sensitivity_score": 0.2098,
+      "treatment": 0,
+      "purchase": 0
+    },
+    {
+      "customer_id": "C04038",
+      "uplift_x": 0.4495,
+      "uplift_t": 0.7336999773979187,
+      "p_treated": 0.8889999985694885,
+      "p_control": 0.15530000627040863,
+      "segment": "Persuadable",
+      "purchase_frequency": 1,
+      "avg_basket_value": 45.56,
+      "rfm_score": 0.1754,
+      "promo_sensitivity_score": 0.1525,
+      "treatment": 1,
+      "purchase": 1
+    },
+    {
+      "customer_id": "C00143",
+      "uplift_x": 0.4487,
+      "uplift_t": 0.5720000267028809,
+      "p_treated": 0.883899986743927,
+      "p_control": 0.31189998984336853,
+      "segment": "Persuadable",
+      "purchase_frequency": 2,
+      "avg_basket_value": 24.24,
+      "rfm_score": 0.2667,
+      "promo_sensitivity_score": 0.2917,
+      "treatment": 1,
+      "purchase": 1
+    },
+    {
+      "customer_id": "C04792",
+      "uplift_x": 0.4445,
+      "uplift_t": 0.692300021648407,
+      "p_treated": 0.9239000082015991,
+      "p_control": 0.23160000145435333,
+      "segment": "Persuadable",
+      "purchase_frequency": 9,
+      "avg_basket_value": 22.48,
+      "rfm_score": 0.6426,
+      "promo_sensitivity_score": 0.502,
+      "treatment": 0,
+      "purchase": 0
+    },
+    {
+      "customer_id": "C00554",
+      "uplift_x": 0.4442,
+      "uplift_t": 0.4023999869823456,
+      "p_treated": 0.7121000289916992,
+      "p_control": 0.30970001220703125,
+      "segment": "Persuadable",
+      "purchase_frequency": 1,
+      "avg_basket_value": 21.69,
+      "rfm_score": 0.1756,
+      "promo_sensitivity_score": 0.1627,
+      "treatment": 1,
+      "purchase": 1
+    },
+    {
+      "customer_id": "C03720",
+      "uplift_x": 0.4414,
+      "uplift_t": 0.503000020980835,
+      "p_treated": 0.867900013923645,
+      "p_control": 0.36489999294281006,
+      "segment": "Persuadable",
+      "purchase_frequency": 5,
+      "avg_basket_value": 12.3,
+      "rfm_score": 0.5317,
+      "promo_sensitivity_score": 0.3798,
+      "treatment": 0,
+      "purchase": 1
+    },
+    {
+      "customer_id": "C00385",
+      "uplift_x": 0.4318,
+      "uplift_t": 0.6439999938011169,
+      "p_treated": 0.7195000052452087,
+      "p_control": 0.0754999965429306,
+      "segment": "Persuadable",
+      "purchase_frequency": 0,
+      "avg_basket_value": 26.69,
+      "rfm_score": 0.2177,
+      "promo_sensitivity_score": 0.2279,
+      "treatment": 0,
+      "purchase": 0
+    },
+    {
+      "customer_id": "C02008",
+      "uplift_x": 0.4305,
+      "uplift_t": 0.6330000162124634,
+      "p_treated": 0.9180999994277954,
+      "p_control": 0.2851000130176544,
+      "segment": "Persuadable",
+      "purchase_frequency": 6,
+      "avg_basket_value": 14.28,
+      "rfm_score": 0.5259,
+      "promo_sensitivity_score": 0.4567,
+      "treatment": 0,
+      "purchase": 0
+    },
+    {
+      "customer_id": "C04382",
+      "uplift_x": 0.4304,
+      "uplift_t": 0.45660001039505005,
+      "p_treated": 0.8792999982833862,
+      "p_control": 0.4226999878883362,
+      "segment": "Persuadable",
+      "purchase_frequency": 5,
+      "avg_basket_value": 35.96,
+      "rfm_score": 0.5548,
+      "promo_sensitivity_score": 0.3653,
+      "treatment": 0,
+      "purchase": 0
+    },
+    {
+      "customer_id": "C02701",
+      "uplift_x": 0.4272,
+      "uplift_t": -0.004000000189989805,
+      "p_treated": 0.6456000208854675,
+      "p_control": 0.6496000289916992,
+      "segment": "Persuadable",
+      "purchase_frequency": 5,
+      "avg_basket_value": 24.12,
+      "rfm_score": 0.3066,
+      "promo_sensitivity_score": 0.1997,
+      "treatment": 0,
+      "purchase": 1
+    },
+    {
+      "customer_id": "C01397",
+      "uplift_x": 0.4224,
+      "uplift_t": 0.47909998893737793,
+      "p_treated": 0.9320999979972839,
+      "p_control": 0.453000009059906,
+      "segment": "Persuadable",
+      "purchase_frequency": 7,
+      "avg_basket_value": 32.53,
+      "rfm_score": 0.6001,
+      "promo_sensitivity_score": 0.4,
+      "treatment": 0,
+      "purchase": 0
+    },
+    {
+      "customer_id": "C01419",
+      "uplift_x": 0.4208,
+      "uplift_t": 0.5291000008583069,
+      "p_treated": 0.9144999980926514,
+      "p_control": 0.3855000138282776,
+      "segment": "Persuadable",
+      "purchase_frequency": 7,
+      "avg_basket_value": 43.22,
+      "rfm_score": 0.6245,
+      "promo_sensitivity_score": 0.3722,
+      "treatment": 1,
+      "purchase": 1
+    },
+    {
+      "customer_id": "C00408",
+      "uplift_x": 0.4186,
+      "uplift_t": 0.5254999995231628,
+      "p_treated": 0.891700029373169,
+      "p_control": 0.3662000000476837,
+      "segment": "Persuadable",
+      "purchase_frequency": 6,
+      "avg_basket_value": 24.77,
+      "rfm_score": 0.5835,
+      "promo_sensitivity_score": 0.5115,
+      "treatment": 0,
+      "purchase": 0
+    },
+    {
+      "customer_id": "C04395",
+      "uplift_x": 0.414,
+      "uplift_t": 0.5618000030517578,
+      "p_treated": 0.9107000231742859,
+      "p_control": 0.3488999903202057,
+      "segment": "Persuadable",
+      "purchase_frequency": 7,
+      "avg_basket_value": 25.55,
+      "rfm_score": 0.5805,
+      "promo_sensitivity_score": 0.4721,
+      "treatment": 0,
+      "purchase": 0
+    },
+    {
+      "customer_id": "C02653",
+      "uplift_x": 0.4137,
+      "uplift_t": 0.21879999339580536,
+      "p_treated": 0.9212999939918518,
+      "p_control": 0.7024999856948853,
+      "segment": "Persuadable",
+      "purchase_frequency": 5,
+      "avg_basket_value": 49.64,
+      "rfm_score": 0.3071,
+      "promo_sensitivity_score": 0.2697,
+      "treatment": 0,
+      "purchase": 1
+    },
+    {
+      "customer_id": "C01310",
+      "uplift_x": 0.4122,
+      "uplift_t": 0.2948000133037567,
+      "p_treated": 0.5993000268936157,
+      "p_control": 0.304500013589859,
+      "segment": "Persuadable",
+      "purchase_frequency": 4,
+      "avg_basket_value": 36.89,
+      "rfm_score": 0.5252,
+      "promo_sensitivity_score": 0.3431,
+      "treatment": 0,
+      "purchase": 0
+    },
+    {
+      "customer_id": "C04142",
+      "uplift_x": 0.4117,
+      "uplift_t": 0.605400025844574,
+      "p_treated": 0.8583999872207642,
+      "p_control": 0.2529999911785126,
+      "segment": "Persuadable",
+      "purchase_frequency": 2,
+      "avg_basket_value": 40.91,
+      "rfm_score": 0.2035,
+      "promo_sensitivity_score": 0.2423,
+      "treatment": 1,
+      "purchase": 1
+    },
+    {
+      "customer_id": "C01171",
+      "uplift_x": 0.4091,
+      "uplift_t": 0.48919999599456787,
+      "p_treated": 0.8294000029563904,
+      "p_control": 0.3402000069618225,
+      "segment": "Persuadable",
+      "purchase_frequency": 5,
+      "avg_basket_value": 27.42,
+      "rfm_score": 0.4213,
+      "promo_sensitivity_score": 0.4211,
+      "treatment": 1,
+      "purchase": 1
+    },
+    {
+      "customer_id": "C00962",
+      "uplift_x": 0.4067,
+      "uplift_t": 0.5767999887466431,
+      "p_treated": 0.7789999842643738,
+      "p_control": 0.2021999955177307,
+      "segment": "Persuadable",
+      "purchase_frequency": 1,
+      "avg_basket_value": 71.04,
+      "rfm_score": 0.3626,
+      "promo_sensitivity_score": 0.4057,
+      "treatment": 0,
+      "purchase": 0
+    },
+    {
+      "customer_id": "C01632",
+      "uplift_x": 0.4037,
+      "uplift_t": 0.5442000031471252,
+      "p_treated": 0.8184999823570251,
+      "p_control": 0.2743000090122223,
+      "segment": "Persuadable",
+      "purchase_frequency": 9,
+      "avg_basket_value": 28.5,
+      "rfm_score": 0.6784,
+      "promo_sensitivity_score": 0.3616,
+      "treatment": 1,
+      "purchase": 1
+    },
+    {
+      "customer_id": "C01436",
+      "uplift_x": 0.4035,
+      "uplift_t": 0.43140000104904175,
+      "p_treated": 0.7470999956130981,
+      "p_control": 0.3156999945640564,
+      "segment": "Persuadable",
+      "purchase_frequency": 5,
+      "avg_basket_value": 30.48,
+      "rfm_score": 0.5292,
+      "promo_sensitivity_score": 0.5706,
+      "treatment": 0,
+      "purchase": 0
+    },
+    {
+      "customer_id": "C01182",
+      "uplift_x": 0.4023,
+      "uplift_t": 0.4456000030040741,
+      "p_treated": 0.7588000297546387,
+      "p_control": 0.3133000135421753,
+      "segment": "Persuadable",
+      "purchase_frequency": 4,
+      "avg_basket_value": 79.09,
+      "rfm_score": 0.5026,
+      "promo_sensitivity_score": 0.3697,
+      "treatment": 0,
+      "purchase": 0
+    },
+    {
+      "customer_id": "C00591",
+      "uplift_x": 0.4019,
+      "uplift_t": 0.5846999883651733,
+      "p_treated": 0.7415000200271606,
+      "p_control": 0.15680000185966492,
+      "segment": "Persuadable",
+      "purchase_frequency": 1,
+      "avg_basket_value": 30.3,
+      "rfm_score": 0.3125,
+      "promo_sensitivity_score": 0.1912,
+      "treatment": 1,
+      "purchase": 1
+    },
+    {
+      "customer_id": "C02973",
+      "uplift_x": 0.3997,
+      "uplift_t": 0.539900004863739,
+      "p_treated": 0.9017999768257141,
+      "p_control": 0.3619999885559082,
+      "segment": "Persuadable",
+      "purchase_frequency": 7,
+      "avg_basket_value": 23.85,
+      "rfm_score": 0.6598,
+      "promo_sensitivity_score": 0.613,
+      "treatment": 1,
+      "purchase": 1
+    },
+    {
+      "customer_id": "C04234",
+      "uplift_x": 0.3995,
+      "uplift_t": 0.5,
+      "p_treated": 0.9079999923706055,
+      "p_control": 0.40799999237060547,
+      "segment": "Persuadable",
+      "purchase_frequency": 5,
+      "avg_basket_value": 52.76,
+      "rfm_score": 0.5651,
+      "promo_sensitivity_score": 0.4122,
+      "treatment": 0,
+      "purchase": 0
+    },
+    {
+      "customer_id": "C00734",
+      "uplift_x": 0.3989,
+      "uplift_t": 0.5778999924659729,
+      "p_treated": 0.8810999989509583,
+      "p_control": 0.30320000648498535,
+      "segment": "Persuadable",
+      "purchase_frequency": 5,
+      "avg_basket_value": 29.07,
+      "rfm_score": 0.5253,
+      "promo_sensitivity_score": 0.4329,
+      "treatment": 0,
+      "purchase": 0
+    },
+    {
+      "customer_id": "C01457",
+      "uplift_x": 0.3977,
+      "uplift_t": 0.37070000171661377,
+      "p_treated": 0.7468000054359436,
+      "p_control": 0.37619999051094055,
+      "segment": "Persuadable",
+      "purchase_frequency": 4,
+      "avg_basket_value": 22.33,
+      "rfm_score": 0.5192,
+      "promo_sensitivity_score": 0.3929,
+      "treatment": 0,
+      "purchase": 1
+    },
+    {
+      "customer_id": "C03316",
+      "uplift_x": 0.3977,
+      "uplift_t": 0.516700029373169,
+      "p_treated": 0.8734999895095825,
+      "p_control": 0.35690000653266907,
+      "segment": "Persuadable",
+      "purchase_frequency": 7,
+      "avg_basket_value": 17.39,
+      "rfm_score": 0.5805,
+      "promo_sensitivity_score": 0.3331,
+      "treatment": 0,
+      "purchase": 1
+    },
+    {
+      "customer_id": "C04738",
+      "uplift_x": 0.3976,
+      "uplift_t": 0.5220000147819519,
+      "p_treated": 0.8398000001907349,
+      "p_control": 0.31779998540878296,
+      "segment": "Persuadable",
+      "purchase_frequency": 5,
+      "avg_basket_value": 18.69,
+      "rfm_score": 0.5277,
+      "promo_sensitivity_score": 0.3598,
+      "treatment": 1,
+      "purchase": 1
+    },
+    {
+      "customer_id": "C00470",
+      "uplift_x": 0.3955,
+      "uplift_t": 0.42809998989105225,
+      "p_treated": 0.9239000082015991,
+      "p_control": 0.4957999885082245,
+      "segment": "Persuadable",
+      "purchase_frequency": 6,
+      "avg_basket_value": 31.23,
+      "rfm_score": 0.5729,
+      "promo_sensitivity_score": 0.4224,
+      "treatment": 1,
+      "purchase": 1
+    },
+    {
+      "customer_id": "C02182",
+      "uplift_x": 0.3946,
+      "uplift_t": 0.705299973487854,
+      "p_treated": 0.867900013923645,
+      "p_control": 0.16259999573230743,
+      "segment": "Persuadable",
+      "purchase_frequency": 1,
+      "avg_basket_value": 11.12,
+      "rfm_score": 0.2379,
+      "promo_sensitivity_score": 0.2898,
+      "treatment": 0,
+      "purchase": 0
+    },
+    {
+      "customer_id": "C04451",
+      "uplift_x": 0.3941,
+      "uplift_t": 0.39070001244544983,
+      "p_treated": 0.9035000205039978,
+      "p_control": 0.5127999782562256,
+      "segment": "Persuadable",
+      "purchase_frequency": 6,
+      "avg_basket_value": 24.75,
+      "rfm_score": 0.5502,
+      "promo_sensitivity_score": 0.353,
+      "treatment": 0,
+      "purchase": 1
+    },
+    {
+      "customer_id": "C00979",
+      "uplift_x": 0.3906,
+      "uplift_t": 0.36309999227523804,
+      "p_treated": 0.597599983215332,
+      "p_control": 0.2345999926328659,
+      "segment": "Persuadable",
+      "purchase_frequency": 3,
+      "avg_basket_value": 30.81,
+      "rfm_score": 0.2294,
+      "promo_sensitivity_score": 0.2356,
+      "treatment": 0,
+      "purchase": 0
+    },
+    {
+      "customer_id": "C01834",
+      "uplift_x": 0.3905,
+      "uplift_t": 0.5981000065803528,
+      "p_treated": 0.8503999710083008,
+      "p_control": 0.2522999942302704,
+      "segment": "Persuadable",
+      "purchase_frequency": 3,
+      "avg_basket_value": 41.2,
+      "rfm_score": 0.3003,
+      "promo_sensitivity_score": 0.2493,
+      "treatment": 0,
+      "purchase": 0
+    },
+    {
+      "customer_id": "C03578",
+      "uplift_x": 0.3846,
+      "uplift_t": 0.5688999891281128,
+      "p_treated": 0.9002000093460083,
+      "p_control": 0.3312999904155731,
+      "segment": "Persuadable",
+      "purchase_frequency": 5,
+      "avg_basket_value": 40.76,
+      "rfm_score": 0.5601,
+      "promo_sensitivity_score": 0.3889,
+      "treatment": 0,
+      "purchase": 0
+    },
+    {
+      "customer_id": "C02053",
+      "uplift_x": 0.3832,
+      "uplift_t": 0.5389000177383423,
+      "p_treated": 0.8867999911308289,
+      "p_control": 0.34790000319480896,
+      "segment": "Persuadable",
+      "purchase_frequency": 5,
+      "avg_basket_value": 43.52,
+      "rfm_score": 0.5313,
+      "promo_sensitivity_score": 0.3649,
+      "treatment": 0,
+      "purchase": 1
+    },
+    {
+      "customer_id": "C03064",
+      "uplift_x": 0.3815,
+      "uplift_t": 0.5174000263214111,
+      "p_treated": 0.847100019454956,
+      "p_control": 0.3296999931335449,
+      "segment": "Persuadable",
+      "purchase_frequency": 8,
+      "avg_basket_value": 15.79,
+      "rfm_score": 0.6132,
+      "promo_sensitivity_score": 0.3674,
+      "treatment": 0,
+      "purchase": 0
+    },
+    {
+      "customer_id": "C00596",
+      "uplift_x": 0.3798,
+      "uplift_t": 0.6209999918937683,
+      "p_treated": 0.8840000033378601,
+      "p_control": 0.2630999982357025,
+      "segment": "Persuadable",
+      "purchase_frequency": 7,
+      "avg_basket_value": 41.41,
+      "rfm_score": 0.5937,
+      "promo_sensitivity_score": 0.3303,
+      "treatment": 1,
+      "purchase": 1
+    },
+    {
+      "customer_id": "C02674",
+      "uplift_x": 0.3794,
+      "uplift_t": 0.5717999935150146,
+      "p_treated": 0.8050000071525574,
+      "p_control": 0.23309999704360962,
+      "segment": "Persuadable",
+      "purchase_frequency": 4,
+      "avg_basket_value": 19.64,
+      "rfm_score": 0.5181,
+      "promo_sensitivity_score": 0.3432,
+      "treatment": 0,
+      "purchase": 0
+    },
+    {
+      "customer_id": "C01550",
+      "uplift_x": 0.3793,
+      "uplift_t": 0.38029998540878296,
+      "p_treated": 0.8414000272750854,
+      "p_control": 0.4611000120639801,
+      "segment": "Persuadable",
+      "purchase_frequency": 6,
+      "avg_basket_value": 37.6,
+      "rfm_score": 0.5488,
+      "promo_sensitivity_score": 0.3712,
+      "treatment": 1,
+      "purchase": 1
+    },
+    {
+      "customer_id": "C03539",
+      "uplift_x": 0.3765,
+      "uplift_t": 0.44999998807907104,
+      "p_treated": 0.7383000254631042,
+      "p_control": 0.2883000075817108,
+      "segment": "Persuadable",
+      "purchase_frequency": 1,
+      "avg_basket_value": 24.61,
+      "rfm_score": 0.4601,
+      "promo_sensitivity_score": 0.3995,
+      "treatment": 0,
+      "purchase": 0
+    },
+    {
+      "customer_id": "C02486",
+      "uplift_x": 0.3758,
+      "uplift_t": 0.5559999942779541,
+      "p_treated": 0.7505000233650208,
+      "p_control": 0.19449999928474426,
+      "segment": "Persuadable",
+      "purchase_frequency": 2,
+      "avg_basket_value": 34.27,
+      "rfm_score": 0.2941,
+      "promo_sensitivity_score": 0.2136,
+      "treatment": 1,
+      "purchase": 1
+    },
+    {
+      "customer_id": "C00378",
+      "uplift_x": 0.3756,
+      "uplift_t": 0.4050999879837036,
+      "p_treated": 0.9287999868392944,
+      "p_control": 0.5236999988555908,
+      "segment": "Persuadable",
+      "purchase_frequency": 7,
+      "avg_basket_value": 16.17,
+      "rfm_score": 0.6367,
+      "promo_sensitivity_score": 0.5412,
+      "treatment": 1,
+      "purchase": 1
+    },
+    {
+      "customer_id": "C04315",
+      "uplift_x": 0.3753,
+      "uplift_t": 0.637499988079071,
+      "p_treated": 0.766700029373169,
+      "p_control": 0.12919999659061432,
+      "segment": "Persuadable",
+      "purchase_frequency": 0,
+      "avg_basket_value": 33.89,
+      "rfm_score": 0.204,
+      "promo_sensitivity_score": 0.4712,
+      "treatment": 0,
+      "purchase": 0
+    },
+    {
+      "customer_id": "C03825",
+      "uplift_x": 0.3735,
+      "uplift_t": 0.4487999975681305,
+      "p_treated": 0.9348999857902527,
+      "p_control": 0.4860999882221222,
+      "segment": "Persuadable",
+      "purchase_frequency": 7,
+      "avg_basket_value": 14.14,
+      "rfm_score": 0.5925,
+      "promo_sensitivity_score": 0.2818,
+      "treatment": 0,
+      "purchase": 1
+    },
+    {
+      "customer_id": "C02020",
+      "uplift_x": 0.3734,
+      "uplift_t": 0.39070001244544983,
+      "p_treated": 0.8242999911308289,
+      "p_control": 0.4336000084877014,
+      "segment": "Persuadable",
+      "purchase_frequency": 8,
+      "avg_basket_value": 33.64,
+      "rfm_score": 0.6372,
+      "promo_sensitivity_score": 0.3477,
+      "treatment": 0,
+      "purchase": 0
+    },
+    {
+      "customer_id": "C00736",
+      "uplift_x": 0.3729,
+      "uplift_t": 0.5706999897956848,
+      "p_treated": 0.9200000166893005,
+      "p_control": 0.34929999709129333,
+      "segment": "Persuadable",
+      "purchase_frequency": 8,
+      "avg_basket_value": 37.65,
+      "rfm_score": 0.6422,
+      "promo_sensitivity_score": 0.4673,
+      "treatment": 0,
+      "purchase": 0
+    },
+    {
+      "customer_id": "C01950",
+      "uplift_x": 0.3728,
+      "uplift_t": 0.2939000129699707,
+      "p_treated": 0.8216999769210815,
+      "p_control": 0.5278000235557556,
+      "segment": "Persuadable",
+      "purchase_frequency": 5,
+      "avg_basket_value": 60.19,
+      "rfm_score": 0.5681,
+      "promo_sensitivity_score": 0.3633,
+      "treatment": 0,
+      "purchase": 1
+    },
+    {
+      "customer_id": "C00226",
+      "uplift_x": 0.3716,
+      "uplift_t": 0.4049000144004822,
+      "p_treated": 0.730400025844574,
+      "p_control": 0.3255000114440918,
+      "segment": "Persuadable",
+      "purchase_frequency": 6,
+      "avg_basket_value": 11.02,
+      "rfm_score": 0.5545,
+      "promo_sensitivity_score": 0.3065,
+      "treatment": 1,
+      "purchase": 1
+    },
+    {
+      "customer_id": "C02573",
+      "uplift_x": 0.3712,
+      "uplift_t": 0.598800003528595,
+      "p_treated": 0.9291999936103821,
+      "p_control": 0.3303999900817871,
+      "segment": "Persuadable",
+      "purchase_frequency": 6,
+      "avg_basket_value": 29.66,
+      "rfm_score": 0.5889,
+      "promo_sensitivity_score": 0.4692,
+      "treatment": 0,
+      "purchase": 0
+    },
+    {
+      "customer_id": "C02991",
+      "uplift_x": 0.371,
+      "uplift_t": 0.4864000082015991,
+      "p_treated": 0.89410001039505,
+      "p_control": 0.4077000021934509,
+      "segment": "Persuadable",
+      "purchase_frequency": 7,
+      "avg_basket_value": 31.87,
+      "rfm_score": 0.5698,
+      "promo_sensitivity_score": 0.3773,
+      "treatment": 1,
+      "purchase": 1
+    },
+    {
+      "customer_id": "C01013",
+      "uplift_x": 0.3709,
+      "uplift_t": 0.43529999256134033,
+      "p_treated": 0.777999997138977,
+      "p_control": 0.3427000045776367,
+      "segment": "Persuadable",
+      "purchase_frequency": 5,
+      "avg_basket_value": 24.77,
+      "rfm_score": 0.4102,
+      "promo_sensitivity_score": 0.2837,
+      "treatment": 0,
+      "purchase": 0
+    },
+    {
+      "customer_id": "C01161",
+      "uplift_x": 0.3703,
+      "uplift_t": 0.48489999771118164,
+      "p_treated": 0.9057000279426575,
+      "p_control": 0.42080000042915344,
+      "segment": "Persuadable",
+      "purchase_frequency": 7,
+      "avg_basket_value": 26.04,
+      "rfm_score": 0.5607,
+      "promo_sensitivity_score": 0.3972,
+      "treatment": 0,
+      "purchase": 0
+    },
+    {
+      "customer_id": "C03550",
+      "uplift_x": 0.37,
+      "uplift_t": 0.41269999742507935,
+      "p_treated": 0.8105000257492065,
+      "p_control": 0.3977999985218048,
+      "segment": "Persuadable",
+      "purchase_frequency": 4,
+      "avg_basket_value": 43.82,
+      "rfm_score": 0.5647,
+      "promo_sensitivity_score": 0.5136,
+      "treatment": 0,
+      "purchase": 1
+    },
+    {
+      "customer_id": "C00134",
+      "uplift_x": 0.3697,
+      "uplift_t": 0.499099999666214,
+      "p_treated": 0.9020000100135803,
+      "p_control": 0.40290001034736633,
+      "segment": "Persuadable",
+      "purchase_frequency": 5,
+      "avg_basket_value": 20.92,
+      "rfm_score": 0.5686,
+      "promo_sensitivity_score": 0.3488,
+      "treatment": 1,
+      "purchase": 1
+    },
+    {
+      "customer_id": "C01560",
+      "uplift_x": 0.3696,
+      "uplift_t": 0.6157000064849854,
+      "p_treated": 0.8561000227928162,
+      "p_control": 0.24040000140666962,
+      "segment": "Persuadable",
+      "purchase_frequency": 8,
+      "avg_basket_value": 23.86,
+      "rfm_score": 0.5932,
+      "promo_sensitivity_score": 0.4434,
+      "treatment": 0,
+      "purchase": 0
+    },
+    {
+      "customer_id": "C00328",
+      "uplift_x": 0.368,
+      "uplift_t": 0.48170000314712524,
+      "p_treated": 0.7990000247955322,
+      "p_control": 0.3172000050544739,
+      "segment": "Persuadable",
+      "purchase_frequency": 5,
+      "avg_basket_value": 28.53,
+      "rfm_score": 0.5284,
+      "promo_sensitivity_score": 0.3794,
+      "treatment": 0,
+      "purchase": 0
+    },
+    {
+      "customer_id": "C04784",
+      "uplift_x": 0.3674,
+      "uplift_t": 0.3995000123977661,
+      "p_treated": 0.7872999906539917,
+      "p_control": 0.3878999948501587,
+      "segment": "Persuadable",
+      "purchase_frequency": 4,
+      "avg_basket_value": 22.25,
+      "rfm_score": 0.5158,
+      "promo_sensitivity_score": 0.405,
+      "treatment": 0,
+      "purchase": 1
+    },
+    {
+      "customer_id": "C03981",
+      "uplift_x": 0.3667,
+      "uplift_t": 0.47699999809265137,
+      "p_treated": 0.8901000022888184,
+      "p_control": 0.413100004196167,
+      "segment": "Persuadable",
+      "purchase_frequency": 7,
+      "avg_basket_value": 23.69,
+      "rfm_score": 0.5931,
+      "promo_sensitivity_score": 0.358,
+      "treatment": 0,
+      "purchase": 0
+    },
+    {
+      "customer_id": "C03601",
+      "uplift_x": 0.3659,
+      "uplift_t": 0.37450000643730164,
+      "p_treated": 0.8697999715805054,
+      "p_control": 0.4952999949455261,
+      "segment": "Persuadable",
+      "purchase_frequency": 7,
+      "avg_basket_value": 27.58,
+      "rfm_score": 0.598,
+      "promo_sensitivity_score": 0.343,
+      "treatment": 0,
+      "purchase": 1
+    },
+    {
+      "customer_id": "C03400",
+      "uplift_x": 0.3653,
+      "uplift_t": 0.33799999952316284,
+      "p_treated": 0.7678999900817871,
+      "p_control": 0.42980000376701355,
+      "segment": "Persuadable",
+      "purchase_frequency": 4,
+      "avg_basket_value": 23.27,
+      "rfm_score": 0.5129,
+      "promo_sensitivity_score": 0.4634,
+      "treatment": 0,
+      "purchase": 1
+    },
+    {
+      "customer_id": "C00558",
+      "uplift_x": 0.3644,
+      "uplift_t": 0.5202000141143799,
+      "p_treated": 0.8773000240325928,
+      "p_control": 0.3569999933242798,
+      "segment": "Persuadable",
+      "purchase_frequency": 5,
+      "avg_basket_value": 41.11,
+      "rfm_score": 0.5203,
+      "promo_sensitivity_score": 0.3553,
+      "treatment": 0,
+      "purchase": 0
+    },
+    {
+      "customer_id": "C00882",
+      "uplift_x": 0.364,
+      "uplift_t": 0.18690000474452972,
+      "p_treated": 0.5651000142097473,
+      "p_control": 0.3781999945640564,
+      "segment": "Persuadable",
+      "purchase_frequency": 1,
+      "avg_basket_value": 74.43,
+      "rfm_score": 0.4407,
+      "promo_sensitivity_score": 0.335,
+      "treatment": 0,
+      "purchase": 1
+    },
+    {
+      "customer_id": "C01961",
+      "uplift_x": 0.3633,
+      "uplift_t": 0.3391000032424927,
+      "p_treated": 0.6581000089645386,
+      "p_control": 0.3190999925136566,
+      "segment": "Persuadable",
+      "purchase_frequency": 4,
+      "avg_basket_value": 12.8,
+      "rfm_score": 0.5019,
+      "promo_sensitivity_score": 0.4581,
+      "treatment": 1,
+      "purchase": 1
+    },
+    {
+      "customer_id": "C00196",
+      "uplift_x": 0.363,
+      "uplift_t": 0.5609999895095825,
+      "p_treated": 0.8680999875068665,
+      "p_control": 0.30709999799728394,
+      "segment": "Persuadable",
+      "purchase_frequency": 5,
+      "avg_basket_value": 61.98,
+      "rfm_score": 0.5189,
+      "promo_sensitivity_score": 0.3619,
+      "treatment": 0,
+      "purchase": 0
+    },
+    {
+      "customer_id": "C02537",
+      "uplift_x": 0.3627,
+      "uplift_t": 0.44620001316070557,
+      "p_treated": 0.6136999726295471,
+      "p_control": 0.16740000247955322,
+      "segment": "Persuadable",
+      "purchase_frequency": 4,
+      "avg_basket_value": 26.94,
+      "rfm_score": 0.5211,
+      "promo_sensitivity_score": 0.1996,
+      "treatment": 0,
+      "purchase": 0
+    },
+    {
+      "customer_id": "C01059",
+      "uplift_x": 0.3618,
+      "uplift_t": 0.6280999779701233,
+      "p_treated": 0.8686000108718872,
+      "p_control": 0.24060000479221344,
+      "segment": "Persuadable",
+      "purchase_frequency": 5,
+      "avg_basket_value": 26.01,
+      "rfm_score": 0.5941,
+      "promo_sensitivity_score": 0.3321,
+      "treatment": 0,
+      "purchase": 0
+    },
+    {
+      "customer_id": "C04638",
+      "uplift_x": 0.3608,
+      "uplift_t": 0.2782000005245209,
+      "p_treated": 0.6680999994277954,
+      "p_control": 0.3898000121116638,
+      "segment": "Persuadable",
+      "purchase_frequency": 5,
+      "avg_basket_value": 17.38,
+      "rfm_score": 0.5472,
+      "promo_sensitivity_score": 0.4357,
+      "treatment": 0,
+      "purchase": 0
+    },
+    {
+      "customer_id": "C04844",
+      "uplift_x": 0.3607,
+      "uplift_t": 0.4887999892234802,
+      "p_treated": 0.8860999941825867,
+      "p_control": 0.39730000495910645,
+      "segment": "Persuadable",
+      "purchase_frequency": 6,
+      "avg_basket_value": 107.84,
+      "rfm_score": 0.5811,
+      "promo_sensitivity_score": 0.4457,
+      "treatment": 1,
+      "purchase": 1
+    },
+    {
+      "customer_id": "C02680",
+      "uplift_x": 0.3597,
+      "uplift_t": 0.7038000226020813,
+      "p_treated": 0.8575999736785889,
+      "p_control": 0.15379999577999115,
+      "segment": "Persuadable",
+      "purchase_frequency": 1,
+      "avg_basket_value": 18.05,
+      "rfm_score": 0.2308,
+      "promo_sensitivity_score": 0.3275,
+      "treatment": 0,
+      "purchase": 0
+    },
+    {
+      "customer_id": "C00902",
+      "uplift_x": 0.3591,
+      "uplift_t": 0.3407000005245209,
+      "p_treated": 0.7968999743461609,
+      "p_control": 0.4560999870300293,
+      "segment": "Persuadable",
+      "purchase_frequency": 6,
+      "avg_basket_value": 33.39,
+      "rfm_score": 0.5304,
+      "promo_sensitivity_score": 0.5453,
+      "treatment": 1,
+      "purchase": 1
+    },
+    {
+      "customer_id": "C03651",
+      "uplift_x": 0.3591,
+      "uplift_t": 0.4165000021457672,
+      "p_treated": 0.8751000165939331,
+      "p_control": 0.4586000144481659,
+      "segment": "Persuadable",
+      "purchase_frequency": 8,
+      "avg_basket_value": 37.13,
+      "rfm_score": 0.612,
+      "promo_sensitivity_score": 0.4078,
+      "treatment": 1,
+      "purchase": 1
+    },
+    {
+      "customer_id": "C02664",
+      "uplift_x": 0.3584,
+      "uplift_t": 0.45339998602867126,
+      "p_treated": 0.8208000063896179,
+      "p_control": 0.36739999055862427,
+      "segment": "Persuadable",
+      "purchase_frequency": 4,
+      "avg_basket_value": 8.24,
+      "rfm_score": 0.5001,
+      "promo_sensitivity_score": 0.3415,
+      "treatment": 0,
+      "purchase": 0
+    },
+    {
+      "customer_id": "C03195",
+      "uplift_x": 0.3582,
+      "uplift_t": 0.6136999726295471,
+      "p_treated": 0.7809000015258789,
+      "p_control": 0.1670999974012375,
+      "segment": "Persuadable",
+      "purchase_frequency": 1,
+      "avg_basket_value": 24.85,
+      "rfm_score": 0.4069,
+      "promo_sensitivity_score": 0.2819,
+      "treatment": 1,
+      "purchase": 1
+    },
+    {
+      "customer_id": "C00601",
+      "uplift_x": 0.358,
+      "uplift_t": 0.5404000282287598,
+      "p_treated": 0.8920999765396118,
+      "p_control": 0.3515999913215637,
+      "segment": "Persuadable",
+      "purchase_frequency": 7,
+      "avg_basket_value": 9.69,
+      "rfm_score": 0.594,
+      "promo_sensitivity_score": 0.5211,
+      "treatment": 0,
+      "purchase": 0
+    },
+    {
+      "customer_id": "C00255",
+      "uplift_x": 0.3578,
+      "uplift_t": 0.505299985408783,
+      "p_treated": 0.760200023651123,
+      "p_control": 0.2549000084400177,
+      "segment": "Persuadable",
+      "purchase_frequency": 5,
+      "avg_basket_value": 17.72,
+      "rfm_score": 0.5073,
+      "promo_sensitivity_score": 0.4008,
+      "treatment": 1,
+      "purchase": 1
+    },
+    {
+      "customer_id": "C04109",
+      "uplift_x": 0.3578,
+      "uplift_t": 0.5066999793052673,
+      "p_treated": 0.8885999917984009,
+      "p_control": 0.38179999589920044,
+      "segment": "Persuadable",
+      "purchase_frequency": 6,
+      "avg_basket_value": 26.53,
+      "rfm_score": 0.4809,
+      "promo_sensitivity_score": 0.5752,
+      "treatment": 1,
+      "purchase": 1
+    },
+    {
+      "customer_id": "C02158",
+      "uplift_x": 0.3576,
+      "uplift_t": 0.4742000102996826,
+      "p_treated": 0.7754999995231628,
+      "p_control": 0.3012999892234802,
+      "segment": "Persuadable",
+      "purchase_frequency": 3,
+      "avg_basket_value": 29.88,
+      "rfm_score": 0.489,
+      "promo_sensitivity_score": 0.434,
+      "treatment": 0,
+      "purchase": 0
+    },
+    {
+      "customer_id": "C03910",
+      "uplift_x": 0.357,
+      "uplift_t": 0.39100000262260437,
+      "p_treated": 0.7922000288963318,
+      "p_control": 0.40119999647140503,
+      "segment": "Persuadable",
+      "purchase_frequency": 5,
+      "avg_basket_value": 32.59,
+      "rfm_score": 0.5168,
+      "promo_sensitivity_score": 0.538,
+      "treatment": 1,
+      "purchase": 1
+    },
+    {
+      "customer_id": "C02351",
+      "uplift_x": 0.3555,
+      "uplift_t": 0.3375000059604645,
+      "p_treated": 0.7484999895095825,
+      "p_control": 0.41100001335144043,
+      "segment": "Persuadable",
+      "purchase_frequency": 6,
+      "avg_basket_value": 27.0,
+      "rfm_score": 0.5245,
+      "promo_sensitivity_score": 0.5283,
+      "treatment": 0,
+      "purchase": 0
+    },
+    {
+      "customer_id": "C02981",
+      "uplift_x": 0.3551,
+      "uplift_t": 0.450300008058548,
+      "p_treated": 0.7384999990463257,
+      "p_control": 0.2881999909877777,
+      "segment": "Persuadable",
+      "purchase_frequency": 5,
+      "avg_basket_value": 12.5,
+      "rfm_score": 0.5085,
+      "promo_sensitivity_score": 0.3379,
+      "treatment": 1,
+      "purchase": 1
+    },
+    {
+      "customer_id": "C02250",
+      "uplift_x": 0.3546,
+      "uplift_t": 0.3443000018596649,
+      "p_treated": 0.8949000239372253,
+      "p_control": 0.550599992275238,
+      "segment": "Persuadable",
+      "purchase_frequency": 5,
+      "avg_basket_value": 60.1,
+      "rfm_score": 0.5581,
+      "promo_sensitivity_score": 0.4015,
+      "treatment": 1,
+      "purchase": 1
+    },
+    {
+      "customer_id": "C01642",
+      "uplift_x": 0.3538,
+      "uplift_t": 0.6784999966621399,
+      "p_treated": 0.8511999845504761,
+      "p_control": 0.1728000044822693,
+      "segment": "Persuadable",
+      "purchase_frequency": 1,
+      "avg_basket_value": 28.66,
+      "rfm_score": 0.2951,
+      "promo_sensitivity_score": 0.1683,
+      "treatment": 1,
+      "purchase": 1
+    },
+    {
+      "customer_id": "C00787",
+      "uplift_x": 0.3536,
+      "uplift_t": 0.26969999074935913,
+      "p_treated": 0.6535999774932861,
+      "p_control": 0.3840000033378601,
+      "segment": "Persuadable",
+      "purchase_frequency": 3,
+      "avg_basket_value": 17.33,
+      "rfm_score": 0.5238,
+      "promo_sensitivity_score": 0.4075,
+      "treatment": 0,
+      "purchase": 1
+    },
+    {
+      "customer_id": "C02841",
+      "uplift_x": 0.3535,
+      "uplift_t": 0.4259999990463257,
+      "p_treated": 0.7621999979019165,
+      "p_control": 0.3361000120639801,
+      "segment": "Persuadable",
+      "purchase_frequency": 4,
+      "avg_basket_value": 16.86,
+      "rfm_score": 0.4536,
+      "promo_sensitivity_score": 0.5842,
+      "treatment": 0,
+      "purchase": 0
+    },
+    {
+      "customer_id": "C03686",
+      "uplift_x": 0.3518,
+      "uplift_t": 0.5162000060081482,
+      "p_treated": 0.7585999965667725,
+      "p_control": 0.24240000545978546,
+      "segment": "Persuadable",
+      "purchase_frequency": 4,
+      "avg_basket_value": 24.72,
+      "rfm_score": 0.3869,
+      "promo_sensitivity_score": 0.2546,
+      "treatment": 1,
+      "purchase": 1
+    },
+    {
+      "customer_id": "C01566",
+      "uplift_x": 0.3515,
+      "uplift_t": 0.41839998960494995,
+      "p_treated": 0.8514000177383423,
+      "p_control": 0.43299999833106995,
+      "segment": "Persuadable",
+      "purchase_frequency": 6,
+      "avg_basket_value": 39.48,
+      "rfm_score": 0.5663,
+      "promo_sensitivity_score": 0.3774,
+      "treatment": 0,
+      "purchase": 0
+    },
+    {
+      "customer_id": "C04825",
+      "uplift_x": 0.3506,
+      "uplift_t": 0.4120999872684479,
+      "p_treated": 0.8938000202178955,
+      "p_control": 0.48170000314712524,
+      "segment": "Persuadable",
+      "purchase_frequency": 5,
+      "avg_basket_value": 18.27,
+      "rfm_score": 0.5842,
+      "promo_sensitivity_score": 0.3747,
+      "treatment": 0,
+      "purchase": 0
+    },
+    {
+      "customer_id": "C00203",
+      "uplift_x": 0.3506,
+      "uplift_t": 0.15109999477863312,
+      "p_treated": 0.426800012588501,
+      "p_control": 0.27570000290870667,
+      "segment": "Persuadable",
+      "purchase_frequency": 5,
+      "avg_basket_value": 96.4,
+      "rfm_score": 0.5597,
+      "promo_sensitivity_score": 0.1324,
+      "treatment": 1,
+      "purchase": 1
+    },
+    {
+      "customer_id": "C02733",
+      "uplift_x": 0.3504,
+      "uplift_t": 0.36579999327659607,
+      "p_treated": 0.7943999767303467,
+      "p_control": 0.428600013256073,
+      "segment": "Persuadable",
+      "purchase_frequency": 5,
+      "avg_basket_value": 27.35,
+      "rfm_score": 0.5946,
+      "promo_sensitivity_score": 0.4732,
+      "treatment": 0,
+      "purchase": 1
+    },
+    {
+      "customer_id": "C02878",
+      "uplift_x": 0.3501,
+      "uplift_t": 0.46709999442100525,
+      "p_treated": 0.7890999913215637,
+      "p_control": 0.32199999690055847,
+      "segment": "Persuadable",
+      "purchase_frequency": 4,
+      "avg_basket_value": 24.49,
+      "rfm_score": 0.5201,
+      "promo_sensitivity_score": 0.4628,
+      "treatment": 1,
+      "purchase": 1
+    },
+    {
+      "customer_id": "C01229",
+      "uplift_x": 0.3494,
+      "uplift_t": 0.5231000185012817,
+      "p_treated": 0.900600016117096,
+      "p_control": 0.3774000108242035,
+      "segment": "Persuadable",
+      "purchase_frequency": 5,
+      "avg_basket_value": 49.61,
+      "rfm_score": 0.5271,
+      "promo_sensitivity_score": 0.4591,
+      "treatment": 1,
+      "purchase": 1
+    },
+    {
+      "customer_id": "C04463",
+      "uplift_x": 0.349,
+      "uplift_t": 0.5771999955177307,
+      "p_treated": 0.9559000134468079,
+      "p_control": 0.37869998812675476,
+      "segment": "Persuadable",
+      "purchase_frequency": 7,
+      "avg_basket_value": 76.89,
+      "rfm_score": 0.345,
+      "promo_sensitivity_score": 0.5368,
+      "treatment": 1,
+      "purchase": 1
+    },
+    {
+      "customer_id": "C00644",
+      "uplift_x": 0.3487,
+      "uplift_t": 0.4230000078678131,
+      "p_treated": 0.5925999879837036,
+      "p_control": 0.1695999950170517,
+      "segment": "Persuadable",
+      "purchase_frequency": 5,
+      "avg_basket_value": 10.57,
+      "rfm_score": 0.5477,
+      "promo_sensitivity_score": 0.1799,
+      "treatment": 0,
+      "purchase": 0
+    },
+    {
+      "customer_id": "C04823",
+      "uplift_x": 0.3468,
+      "uplift_t": 0.551800012588501,
+      "p_treated": 0.8166999816894531,
+      "p_control": 0.26489999890327454,
+      "segment": "Persuadable",
+      "purchase_frequency": 4,
+      "avg_basket_value": 79.76,
+      "rfm_score": 0.4729,
+      "promo_sensitivity_score": 0.4384,
+      "treatment": 0,
+      "purchase": 0
+    },
+    {
+      "customer_id": "C04542",
+      "uplift_x": 0.3467,
+      "uplift_t": 0.4505999982357025,
+      "p_treated": 0.7750999927520752,
+      "p_control": 0.3244999945163727,
+      "segment": "Persuadable",
+      "purchase_frequency": 5,
+      "avg_basket_value": 9.7,
+      "rfm_score": 0.5473,
+      "promo_sensitivity_score": 0.3618,
+      "treatment": 0,
+      "purchase": 0
+    },
+    {
+      "customer_id": "C03612",
+      "uplift_x": 0.3463,
+      "uplift_t": 0.3862000107765198,
+      "p_treated": 0.7853999733924866,
+      "p_control": 0.3991999924182892,
+      "segment": "Persuadable",
+      "purchase_frequency": 3,
+      "avg_basket_value": 47.48,
+      "rfm_score": 0.5362,
+      "promo_sensitivity_score": 0.4208,
+      "treatment": 0,
+      "purchase": 0
+    }
+  ],
+  "weekly_trend": [
+    51.93,
+    54.96,
+    57.1,
+    59.76,
+    61.69,
+    63.65,
+    66.03,
+    68.44,
+    70.39,
+    71.2,
+    73.12,
+    75.46
+  ]
+}
