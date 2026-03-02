@@ -23,6 +23,8 @@ import numpy as np
 import pandas as pd
 import json
 import warnings
+import os
+from pathlib import Path
 warnings.filterwarnings('ignore')
 
 from sklearn.model_selection import train_test_split, cross_val_score
@@ -33,6 +35,20 @@ from sklearn.metrics import roc_auc_score, classification_report
 from sklearn.cluster import KMeans
 from sklearn.decomposition import PCA
 import xgboost as xgb
+
+# Import real data loader if available
+try:
+    from data_loader import load_dunnhumby_data
+    REAL_DATA_AVAILABLE = True
+except ImportError:
+    REAL_DATA_AVAILABLE = False
+
+# Import model saving utilities
+try:
+    from model_utils import save_pipeline_models
+    MODEL_SAVE_AVAILABLE = True
+except ImportError:
+    MODEL_SAVE_AVAILABLE = False
 
 # ─────────────────────────────────────────────────────────────
 # STEP 1: DATA SIMULATION (Replace with real Dunnhumby loader)
@@ -159,6 +175,15 @@ def feature_engineering(df):
         {'18-25': 1, '26-35': 2, '36-45': 3, '46-55': 4, '55+': 5})
     fe['income_encoded'] = fe['income_group'].map({'Low': 1, 'Medium': 2, 'High': 3})
     fe['married'] = (fe['marital_status'] == 'Married').astype(int)
+    
+    # Handle household_size - convert to numeric if it's a string
+    if fe['household_size'].dtype == 'object':
+        # Extract number from strings like "2 Adults No Kids" or just use hash
+        fe['household_size'] = pd.factorize(fe['household_size'])[0] + 1
+    
+    # Fill NaN values in encoded columns
+    fe['age_encoded'] = fe['age_encoded'].fillna(3)  # default to middle age
+    fe['income_encoded'] = fe['income_encoded'].fillna(2)  # default to medium
 
     # Interaction features
     fe['promo_sensitivity_score'] = (
@@ -664,10 +689,12 @@ def export_dashboard_data(df, uplift_t, uplift_x, p_treat, p_control,
         'weekly_trend': weekly_trend,
     }
 
-    with open('dashboard_data.json', 'w') as f:
+    # Save to outputs folder
+    os.makedirs('outputs', exist_ok=True)
+    with open('outputs/dashboard_data.json', 'w') as f:
         json.dump(dashboard_data, f, indent=2)
 
-    print(f"[EXPORT] Data exported to dashboard_data.json")
+    print(f"[EXPORT] Data exported to outputs/dashboard_data.json")
     print(f"\n{'='*60}")
     print("PIPELINE COMPLETE!")
     print(f"{'='*60}")
@@ -693,7 +720,14 @@ if __name__ == '__main__':
     print("="*60)
 
     # 1. Load / simulate data
-    df = simulate_dunnhumby_data(n_customers=5000)
+    # Check if real data is available
+    if REAL_DATA_AVAILABLE and Path('data/transaction_data.csv').exists():
+        print("\n[INFO] Real Dunnhumby data detected!")
+        df = load_dunnhumby_data(sample_size=5000)
+    else:
+        print("\n[INFO] Using simulated data (real data not found)")
+        print("[INFO] To use real data: run 'python download_data.py' first")
+        df = simulate_dunnhumby_data(n_customers=5000)
 
     # 2. Feature engineering
     df = feature_engineering(df)
@@ -729,4 +763,15 @@ if __name__ == '__main__':
         qini_coeff, roi_data, best_roi, ps_scores
     )
 
-    print("\nNext step: Open dashboard.html in your browser!")
+    # 11. Save models
+    if MODEL_SAVE_AVAILABLE:
+        print("\n[SAVE] Saving trained models...")
+        models_to_save = {
+            't_learner_treated': m1,
+            't_learner_control': m0,
+            'propensity_model': ps_model,
+            'xgboost_baseline': baseline_results['XGBoost']['model']
+        }
+        save_pipeline_models(models_to_save)
+    
+    print("\nNext step: Open outputs/dashboard.html in your browser!")

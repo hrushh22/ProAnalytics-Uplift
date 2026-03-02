@@ -26,11 +26,28 @@ Dunnhumby Complete Journey Dataset
 
 ## Setup
 ```bash
-python -m venv venv
-source venv/Scripts/activate  # Windows Git Bash
+# 1. Clone the repository
+git clone https://github.com/hrushh22/ProAnalytics-Uplift.git
+cd ProAnalytics-Uplift
+
+# 2. Install dependencies
 pip install -r requirements.txt
+
+# 3. Download Dunnhumby dataset (required)
+pip install kagglehub
+python download_data.py
+
+# 4. Run the pipeline
 python uplift_pipeline.py
 ```
+
+## Data
+The Dunnhumby Complete Journey dataset is **not included** in this repository due to size constraints (>100MB).
+
+**To get the data:**
+1. Run `python download_data.py` (requires Kaggle account)
+2. Or manually download from [Kaggle](https://www.kaggle.com/datasets/frtgnn/dunnhumby-the-complete-journey)
+3. Place CSV files in `data/` folder
 
 ## Output
 Open `outputs/dashboard.html` in your browser for the interactive dashboard.

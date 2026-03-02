@@ -6,3 +6,6 @@ __pycache__/
 .ipynb_checkpoints/
 *.log
 mlruns/
+data/*.csv
+models/*.pkl
+models/*.json
